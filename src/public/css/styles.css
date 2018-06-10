@@ -102,4 +102,10 @@
       .c-card-grid .c-card-grid__card-three {
         grid-column: 3 / 3; }
       .c-card-grid .c-card-grid__card-for {
-        grid-column: 4 / 4; } }
+        grid-column: 4 / 4; }
+      .c-card-grid .c-card-grid__card-five {
+        grid-column: 1 / 1; }
+      .c-card-grid .c-card-grid__card-six {
+        grid-column: 2 / 2; }
+      .c-card-grid .c-card-grid__card-seven {
+        grid-column: 3 / 4; } }
