@@ -1,0 +1,80 @@
+%background-position {
+    position: absolute;        
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.c-card {
+
+    position: relative;
+    width: 285px;
+    height: 285px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+    &__img {
+        @extend %background-position;
+    }
+
+    &__shadow {
+        @extend %background-position;
+    }        
+
+    &__title-one {
+        position: absolute;
+        left: 0px;
+        top: 39%;        
+    }    
+
+    &__title-one_main {
+        top: 25%;
+    }        
+ 
+    &__title-two {
+        position: absolute;
+        left: 0px;
+        top: 47%;  
+    }        
+
+    &__logo {
+        position: absolute;
+        left: 64px;
+        top: 34%;
+    }
+
+    &__title-logo {
+        display: none;        
+    }
+
+    &__message {
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        top: 50%;
+    }           
+
+    &__button {
+        display: none;
+    }
+
+    @media (min-width: 600px) {
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+

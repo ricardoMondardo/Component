@@ -1,0 +1,18 @@
+.card {
+  /*
+    shouldn't set the external geometry (margin) or positioning for the block, this is DIV/BLOCK
+    it is possible to move? it is possible to reuse?
+    */
+  border-radius: 10px;
+  border: solid 1px green;
+  /*
+    @at-root .card--modifier {
+    } 
+    */ }
+  .card__title {
+    color: aquamarine; }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px; }

@@ -1,0 +1,12 @@
+.c-title {
+    width: 100%;
+    text-align: center;
+    font-size: 13.5px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;    
+
+    &_big {
+        font-size: 27px;      
+        font-weight: 900;   
+    }        
+}
