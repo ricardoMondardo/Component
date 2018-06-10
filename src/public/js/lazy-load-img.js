@@ -61,6 +61,7 @@ function loadImagesImmediately(images) {
   // foreach() is not supported in IE
   for (let i = 0; i < images.length; i++) { 
     let image = images[i];
+    console.log(image);
     preloadImage(image);
   }
 }

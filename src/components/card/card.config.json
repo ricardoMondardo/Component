@@ -4,46 +4,13 @@
             "title": "front-end",
             "title-big": "valtech",
             "img": "http://localhost:3000/img/Lagoa.jpg",
-            "alt": "Lagoa",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat laborum consectetur.",
-            "logo": "aaaaa"
+            "alt": "Lagoa"
         },
-        "cards": [{
+        "italy": {
             "title": "italy",
             "title-big": "VENICE",
-            "img": "http://localhost:3000/img/Venice.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat.",
-            "hasLogo": false
-        },{
-            "title": "germany",
-            "title-big": "BERLIN",
-            "img": "http://localhost:3000/img/Berlin.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat.",
-            "hasLogo": false
-        },{
-            "title": "spain",
-            "title-big": "BARCELONA",
-            "img": "http://localhost:3000/img/Barcelona.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat.",
-            "hasLogo": false
-        },{
-            "title": "france",
-            "title-big": "PARIS",
-            "img": "http://localhost:3000/img/Paris.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat.",
-            "hasLogo": false
-        },{ 
-            "title": "netherlands",
-            "title-big": "AMSTERDAM",
-            "img": "http://localhost:3000/img/Amsterdam.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat.",
-            "hasLogo": false
-        },{
-            "title": "united kingdom",
-            "title-big": "LONDON",
-            "img": "http://localhost:3000/img/london.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat.",
-            "hasLogo": false
-        }]
+            "img": "http://localhost:3000/img/Venice.jpg"
+        }
     }
 }
+
