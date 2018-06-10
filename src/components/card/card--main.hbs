@@ -1,12 +1,10 @@
-{{#each m-cards}}
-    <div class="c-card c-card--main">
-        <img class="c-card__img c-image-background" id="image" src="{{img}}" alt="{{alt}}">            
-        <div class="c-card__shadow c-shadow-background"></div>         
-        
-        <div class="c-card__title-one c-card__title-one_main c-title">{{title}}</div>        
-        <img class="c-card__logo c-logo" src="http://localhost:3000/img/Logo.svg" alt="logo">
+<div class="c-card c-card--biger">
+    <img class="c-card__img c-image-background" id="image" src="{{main-card.img}}" alt="{{main-card.alt}}">            
+    <div class="c-card__shadow c-shadow-background"></div>         
+    
+    <div class="c-card__title-one c-card__title-one_main c-title">{{main-card.title}}</div>        
+    <img class="c-card__logo c-logo" src="http://localhost:3000/img/Logo.svg" alt="logo">
 
-        <div class="c-card__message c-message">{{text}}</div>
-        <div class="c-card__button">{{render "@button"}}</div>                                        
-    </div>
-{{/each}}
+    <div class="c-card__message c-message">{{main-card.text}}</div>
+    <div class="c-card__button">{{render "@button"}}</div>                                        
+</div>

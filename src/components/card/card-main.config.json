@@ -1,12 +1,12 @@
 {
     "context": {
-        "m-cards": [{
+        "main-card": {
             "title": "front-end",
             "title-big": "valtech",
-            "img": "http://localhost:3000/img/Lagoa-sm.jpg",
+            "img": "http://localhost:3000/img/Lagoa.jpg",
             "alt": "Lagoa",
             "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat laborum.",
             "logo": "aaaaa"
-        }]
+        }
     }
 }

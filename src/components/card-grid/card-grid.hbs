@@ -1,3 +1,38 @@
 <div class="c-card-grid">
-    {{render "@card" }}    
+
+    <div class="c-card-grid__card-one c-card c-card--biger">
+        <img class="c-card__img c-image-background" id="image" src="{{main-card.img}}" alt="{{main-card.alt}}">            
+        <div class="c-card__shadow c-shadow-background"></div>         
+        
+        <div class="c-card__title-one c-card__title-one_main c-title">{{main-card.title}}</div>        
+        <img class="c-card__logo c-logo" src="http://localhost:3000/img/Logo.svg" alt="logo">
+
+        <div class="c-card__message c-message">{{main-card.text}}</div>
+        <div class="c-card__button">{{render "@button"}}</div>                                        
+    </div>
+    
+    <div class="c-card-grid__card-two c-card c-card--middle">        
+        <img id="image" class="c-card__img c-image-background" src="{{italy.img}}" alt="{{italy.alt}}">            
+        <div class="c-card__shadow c-shadow-background"></div>         
+        <div class="c-card__title-one c-title">{{italy.title}}</div>        
+        <div class="c-card__title-two c-title c-title_big">{{italy.title-big}}</div>                                
+        <div class="c-card__button">{{render "@button"}}</div>                                        
+    </div>        
+
+    <div class="c-card-grid__card-three c-card c-card--sm">        
+        <img id="image" class="c-card__img c-image-background" src="{{germany.img}}" alt="{{germany.alt}}">            
+        <div class="c-card__shadow c-shadow-background"></div>         
+        <div class="c-card__title-one c-title">{{germany.title}}</div>        
+        <div class="c-card__title-two c-title c-title_big">{{germany.title-big}}</div>                                
+        <div class="c-card__button">{{render "@button"}}</div>                                        
+    </div>        
+
+    <div class="c-card-grid__card-for c-card c-card--sm">        
+        <img id="image" class="c-card__img c-image-background" src="{{spain.img}}" alt="{{spain.alt}}">            
+        <div class="c-card__shadow c-shadow-background"></div>         
+        <div class="c-card__title-one c-title">{{spain.title}}</div>        
+        <div class="c-card__title-two c-title c-title_big">{{spain.title-big}}</div>                                
+        <div class="c-card__button">{{render "@button"}}</div>                                        
+    </div>                    
+
 </div>

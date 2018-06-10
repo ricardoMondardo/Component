@@ -35,13 +35,13 @@
  
     &__title-two {
         position: absolute;
-        left: 0px;
+        left: 0%;
         top: 47%;  
     }        
 
     &__logo {
         position: absolute;
-        left: 64px;
+        left: 23%;
         top: 34%;
     }
 
@@ -51,8 +51,8 @@
 
     &__message {
         position: absolute;
-        left: 15px;
-        right: 15px;
+        left: 5%;
+        right: 5%;
         top: 50%;
     }           
 
@@ -60,21 +60,30 @@
         display: none;
     }
 
-    @media (min-width: 600px) {
+    @media (min-width: 600px) {        
+        &--biger {
+            width: 940px;
+            height: 520px;        
+        }
+        &--middle {
+            width: 460px;
+            height: 360px;        
+        }        
+        &--sm {
+            width: 220px;
+            height: 360px;        
+        }                
+        &__logo {
+            width: 27%;
+            left: 36%;
+            top: 37%;
+        }
+        &__message {
+            top: 55%;
+            left: 23%;
+            width: 52%; 
+        }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 

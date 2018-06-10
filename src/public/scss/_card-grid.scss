@@ -2,12 +2,31 @@
 
     display: grid;
     grid-template-columns: auto;
-    grid-gap: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    width: 860px;
+
+    top: 5px;
+    left: 5px;
 
     @media (min-width: 600px) {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 230px 230px 230px 230px;
+
+        .c-card-grid__card-one {
+            grid-column: 1 / 4;            
+        }
+
+        .c-card-grid__card-two {
+            grid-column: 1 / 2;             
+        }
+
+        .c-card-grid__card-three {
+            grid-column: 3 / 3;            
+        }
+        
+        .c-card-grid__card-for {
+            grid-column: 4 / 4;            
+        }        
     }    
     
 }
