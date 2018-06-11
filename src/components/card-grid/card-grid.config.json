@@ -2,7 +2,7 @@
     "context": {
         "card-one": {
             "content": {
-                "text": "lorem Est aliquip in ex magna aliquip.",
+                "text": "lorem Est aliquip in ex magna aliquip. lorem Est aliquip in ex magna aliquip. lorem.",
                 "section-main": {
                     "title-up": "front-end",
                     "title-down": "",
@@ -79,7 +79,7 @@
                 "text": "lorem Est aliquip in ex magna aliquip.",
                 "section-main": {
                     "title-up": "united kingom",
-                    "title-down": "",
+                    "title-down": "LONDON",
                     "logo": "http://localhost:3000/img/Logo.svg"
                 }, 
                 "card-background": {

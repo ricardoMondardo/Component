@@ -18,10 +18,14 @@
 }
 
 .c-shadow-background {
-    background-color: rgba(128, 128, 128, 0.38);
+    background-color: rgba(84, 84, 84, 0.5);
     @extend %size-backgroun;         
 }
 
 .c-logo {
     width: 135px;
+}
+
+.c-hidden {
+    display: none;
 }

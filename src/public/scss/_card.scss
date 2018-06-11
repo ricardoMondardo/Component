@@ -23,23 +23,25 @@
     }        
 
     &__message {
-        position: relative;
+        position: absolute;
         top: 60%;
-        left: 50%;
-        transform: translateX(-50%);        
-    }           
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }  
 
     &__button {
         display: none;
         position: absolute;
         bottom: 10%;                        
         left: 50%;
-        transform: translateX(-50%);                            
+        transform: translateX(-50%); 
+        transition-delay: 4s;                           
         transition: display 2s, transform 1s 1s linear;
     }
 
     @media (min-width: 600px) {        
-        &--biger {
+        &--bigger {
             width: 940px;
             height: 520px;        
         }
@@ -50,18 +52,23 @@
         &--sm {
             width: 220px;
             height: 360px;        
-        }     
+        }                 
 
         &__section-main {
-            top: 35%;
+            top: 35%; //
         }
 
-        &--animated-button {
+        &__button--animated {
             display: block;
         }        
-
-        &--animated-section-main {
+        &__section-main--animated {
             top: 10%;          
         }
+        &__shadow--animated {
+            background-color: rgba(84, 84, 84, 0.8)
+        }          
+        &__message--animated {
+            display: block;
+        }      
     }
 }

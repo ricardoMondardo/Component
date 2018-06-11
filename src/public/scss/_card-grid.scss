@@ -5,9 +5,7 @@
     grid-column-gap: 10px;
     grid-row-gap: 20px;
     width: 860px;
-
-    top: 5px;
-    left: 5px;
+    padding: 5px;
 
     @media (min-width: 600px) {
         grid-template-columns: 230px 230px 230px 230px;
