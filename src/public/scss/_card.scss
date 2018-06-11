@@ -16,30 +16,26 @@
 
     &__section-main {
         position: absolute;
-        top: 15%;
-        left: 15%;
-        transition: top 2s, transform 1s 1s linear;        
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: top 2s, transform 1s 1s linear;       
     }        
 
-    &__logo {
-        position: absolute;
-        left: 23%;
-        top: 34%;
-    }
-
-    &__title-logo {
-        display: none;        
-    }
-
     &__message {
-        position: absolute;
-        left: 5%;
-        right: 5%;
-        top: 54%;
+        position: relative;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);        
     }           
 
     &__button {
         display: none;
+        position: absolute;
+        bottom: 10%;                        
+        left: 50%;
+        transform: translateX(-50%);                            
+        transition: display 2s, transform 1s 1s linear;
     }
 
     @media (min-width: 600px) {        
@@ -54,21 +50,18 @@
         &--sm {
             width: 220px;
             height: 360px;        
-        }    
-        
+        }     
+
         &__section-main {
-            left: 40%;
-            top: 15%;
-        }                
+            top: 35%;
+        }
 
-        &__message {
-            top: 60%;
-            left: 23%;
-            width: 52%; 
+        &--animated-button {
+            display: block;
         }        
 
-        &__title-one--animated {
-            top: 20%;
-        }        
+        &--animated-section-main {
+            top: 10%;          
+        }
     }
 }

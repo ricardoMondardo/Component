@@ -14,15 +14,15 @@
 .c-shadow-background {
   background-color: rgba(128, 128, 128, 0.38); }
 
-.c-button {
-  color: white; }
+.c-logo {
+  width: 135px; }
 
 .c-title {
   text-align: center;
   font-size: 13.5px;
   letter-spacing: 2.5px;
   text-transform: uppercase; }
-  .c-title_big {
+  .c-title--big {
     font-size: 27px;
     font-weight: 900; }
 
@@ -32,28 +32,21 @@
   font-size: 13px;
   letter-spacing: 0.6px; }
 
+.c-button {
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px white;
+  color: white;
+  background-color: transparent; }
+
 .c-section-main {
-  position: relative;
   width: 200px;
-  height: 200px; }
-  .c-section-main__up {
-    position: absolute;
-    width: 100%;
-    top: 35%; }
-  .c-section-main__down {
-    position: absolute;
-    width: 100%;
-    top: 48%; }
-  .c-section-main--main-card__up {
-    top: 18%; }
-  .c-section-main--main-card__down {
-    top: 28%; }
-  @media (min-width: 600px) {
-    .c-section-main--main-card__up {
-      top: 44%; }
-    .c-section-main--main-card__down {
-      top: 60%;
-      width: 194px; } }
+  height: 85px;
+  line-height: 40px; }
+  .c-section-main__logo {
+    width: 135px;
+    padding-left: 37px; }
 
 .c-card {
   position: relative;
@@ -63,22 +56,22 @@
   font-family: 'Open Sans', sans-serif; }
   .c-card__section-main {
     position: absolute;
-    top: 15%;
-    left: 15%;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
     transition: top 2s, transform 1s 1s linear; }
-  .c-card__logo {
-    position: absolute;
-    left: 23%;
-    top: 34%; }
-  .c-card__title-logo {
-    display: none; }
   .c-card__message {
-    position: absolute;
-    left: 5%;
-    right: 5%;
-    top: 54%; }
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%); }
   .c-card__button {
-    display: none; }
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: display 2s, transform 1s 1s linear; }
   @media (min-width: 600px) {
     .c-card--biger {
       width: 940px;
@@ -90,14 +83,11 @@
       width: 220px;
       height: 360px; }
     .c-card__section-main {
-      left: 40%;
-      top: 15%; }
-    .c-card__message {
-      top: 60%;
-      left: 23%;
-      width: 52%; }
-    .c-card__title-one--animated {
-      top: 20%; } }
+      top: 35%; }
+    .c-card--animated-button {
+      display: block; }
+    .c-card--animated-section-main {
+      top: 10%; } }
 
 .c-card-grid {
   display: grid;

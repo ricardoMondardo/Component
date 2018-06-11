@@ -1,67 +1,31 @@
 <div class="c-card-grid">
 
-    <div class="c-card-grid__card-one c-card c-card--biger">
-        <img class="c-card__img c-image-background js-lazy-image" 
-            data-src="{{main-card.data-src}}" alt="{{main-card.alt}}">            
-        <div class="c-card__shadow c-shadow-background"></div>                 
-        <div class="c-card__title-one c-card__title-one_main c-title">{{main-card.title}}</div>        
-        <img class="c-card__logo c-logo" src="http://localhost:3000/img/Logo.svg" alt="logo">
-        <div class="c-card__message c-message">{{main-card.text}}</div>
-        <div class="c-card__button">{{render "@button"}}</div>                                        
+    <div class="c-card-grid__card-one">                               
+        {{render "@card--bigger" card-one}}
     </div>
     
     <div class="c-card-grid__card-two c-card c-card--middle">        
-        <img class="c-card__img c-image-background js-lazy-image" 
-            data-src="{{italy.data-src}}" alt="{{italy.alt}}">            
-        <div class="c-card__shadow c-shadow-background"></div>         
-        <div class="c-card__title-one c-title">{{italy.title}}</div>        
-        <div class="c-card__title-two c-title c-title_big">{{italy.title-big}}</div>                                
-        <div class="c-card__button">{{render "@button"}}</div>                                        
+        {{render "@card--middle" card-two}}
     </div>        
 
-    <div class="c-card-grid__card-three c-card c-card--sm">        
-        <img class="c-card__img c-image-background js-lazy-image" 
-            data-src="{{germany.data-src}}" alt="{{germany.alt}}">            
-        <div class="c-card__shadow c-shadow-background"></div>         
-        <div class="c-card__title-one c-title">{{germany.title}}</div>        
-        <div class="c-card__title-two c-title c-title_big">{{germany.title-big}}</div>                                
-        <div class="c-card__button">{{render "@button"}}</div>                                        
+    <div class="c-card-grid__card-three">        
+        {{render "@card--small" card-three}}
     </div>        
 
     <div class="c-card-grid__card-for c-card c-card--sm">        
-        <img class="c-card__img c-image-background js-lazy-image" 
-            data-src="{{spain.data-src}}" alt="{{spain.alt}}">            
-        <div class="c-card__shadow c-shadow-background"></div>         
-        <div class="c-card__title-one c-title">{{spain.title}}</div>        
-        <div class="c-card__title-two c-title c-title_big">{{spain.title-big}}</div>                                
-        <div class="c-card__button">{{render "@button"}}</div>                                        
+        {{render "@card--small" card-for}}
     </div>                    
 
-    <div class="c-card-grid__card-five c-card c-card--sm">        
-        <img class="c-card__img c-image-background js-lazy-image" 
-            data-src="{{france.data-src}}" alt="{{france.alt}}">            
-        <div class="c-card__shadow c-shadow-background"></div>         
-        <div class="c-card__title-one c-title">{{france.title}}</div>        
-        <div class="c-card__title-two c-title c-title_big">{{france.title-big}}</div>                                
-        <div class="c-card__button">{{render "@button"}}</div>                                        
+    <div class="c-card-grid__card-five">        
+        {{render "@card--small" card-five}}
     </div>                    
 
-    <div class="c-card-grid__card-six c-card c-card--sm">        
-        <img class="c-card__img c-image-background js-lazy-image" 
-            data-src="{{netherlands.data-src}}" alt="{{netherlands.alt}}">            
-        <div class="c-card__shadow c-shadow-background"></div>         
-        <div class="c-card__title-one c-title">{{netherlands.title}}</div>        
-        <div class="c-card__title-two c-title c-title_big">{{netherlands.title-big}}</div>                                
-        <div class="c-card__button">{{render "@button"}}</div>                                        
+    <div class="c-card-grid__card-six">        
+        {{render "@card--small" card-six}}
     </div>                    
 
-    <div class="c-card-grid__card-seven c-card c-card--middle">        
-        <img class="c-card__img c-image-background js-lazy-image" 
-            data-src="{{united-kingdom.data-src}}" alt="{{united-kingdom.alt}}">            
-        <div class="c-card__shadow c-shadow-background"></div>         
-        <div class="c-card__title-one c-title">{{united-kingdom.title}}</div>        
-        <div class="c-card__title-two c-title c-title_big">{{united-kingdom.title-big}}</div>                                
-        <div class="c-card__button">{{render "@button"}}</div>                                        
+    <div class="c-card-grid__card-seven">        
+        {{render "@card--middle" card-seven}}
     </div>                                
 
 </div>

@@ -1,39 +1,11 @@
 .c-section-main {
-    position: relative;
     width: 200px;
-    height: 200px;
+    height: 85px;
+    line-height: 40px;
 
-    &__up {
-        position: absolute;
-        width: 100%;
-        top: 35%;
+    &__logo {
+        width: 135px;
+        padding-left: 37px;
     }    
-
-    &__down {
-        position: absolute;
-        width: 100%;
-        top: 48%;
-    }
- 
-    &--main-card {
-        &__up {
-            top: 18%;
-        }    
-    
-        &__down {
-            top: 28%;
-        }        
-
-        @media (min-width: 600px) {             
-            &__up {
-                top: 44%;
-            }                
-            &__down {
-                top: 60%;
-                width: 194px;
-            }
-        }        
-    }
-
 
 }

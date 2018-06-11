@@ -1,55 +1,93 @@
 {
     "context": {
-        "main-card": {
-            "title": "front-end",
-            "title-big": "valtech",
-            "data-src": "http://localhost:3000/img/Lagoa.jpg",
-            "alt": "Lagoa",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat laborum consectetur."
-        },
-        "animeted": {
-            "title": "italy",
-            "title-big": "VENICE",
-            "data-src": "http://localhost:3000/img/Venice.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat.",
-            "hasLogo": false
-        },
-        "italy": {
-            "title": "italy",
-            "title-big": "VENICE",
-            "data-src": "http://localhost:3000/img/Venice.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat."
-        },
-        "germany":{
-            "title": "germany",
-            "title-big": "BERLIN",
-            "data-src": "http://localhost:3000/img/Berlin.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat."
-        },
-        "spain":{
-            "title": "spain",
-            "title-big": "BARCELONA",
-            "data-src": "http://localhost:3000/img/Barcelona.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat."
-        },
-        "france":{
-            "title": "france",
-            "title-big": "PARIS",
-            "data-src": "http://localhost:3000/img/Paris.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat."
-        },
-        "netherlands":{ 
-            "title": "netherlands",
-            "title-big": "AMSTERDAM",
-            "data-src": "http://localhost:3000/img/Amsterdam.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat."
-        },
-        "united-kingdom":{
-            "title": "united kingdom",
-            "title-big": "LONDON",
-            "data-src": "http://localhost:3000/img/london.jpg",
-            "text": "Lorem eu minim veniam incididunt anim do laborum consectetur cupidatat."
-        }
+        "card-one": {
+            "content": {
+                "text": "lorem Est aliquip in ex magna aliquip.",
+                "section-main": {
+                    "title-up": "front-end",
+                    "title-down": "",
+                    "logo": "http://localhost:3000/img/Logo.svg"
+                }, 
+                "card-background": {
+                    "img": "http://localhost:3000/img/Lagoa.jpg",
+                    "alt": "Lagoa"                    
+                }
+            }
+        },"card-two": {
+            "content": {
+                "text": "lorem Est aliquip in ex magna aliquip.",
+                "section-main": {
+                    "title-up": "italy",
+                    "title-down": "VENICE",
+                    "logo": ""
+                }, 
+                "card-background": {
+                    "img": "http://localhost:3000/img/Venice.jpg",
+                    "alt": "Venice"                    
+                }
+            }
+        },"card-three": {
+            "content": {
+                "text": "lorem Est aliquip in ex magna aliquip.",
+                "section-main": {
+                    "title-up": "germany",
+                    "title-down": "BERLIN"
+                }, 
+                "card-background": {
+                    "img": "http://localhost:3000/img/Berlin.jpg",
+                    "alt": "Berlin"                    
+                }
+            }
+        },"card-for": {
+            "content": {
+                "text": "lorem Est aliquip in ex magna aliquip.",
+                "section-main": {
+                    "title-up": "spain",
+                    "title-down": "BARCELONA"
+                }, 
+                "card-background": {
+                    "img": "http://localhost:3000/img/Barcelona.jpg",
+                    "alt": "Barcelona"                    
+                }
+            }
+        },"card-five": {
+            "content": {
+                "text": "lorem Est aliquip in ex magna aliquip.",
+                "section-main": {
+                    "title-up": "france",
+                    "title-down": "PARIS"
+                }, 
+                "card-background": {
+                    "img": "http://localhost:3000/img/Paris.jpg",
+                    "alt": "Paris"                    
+                }
+            }
+        },"card-six": {
+            "content": {
+                "text": "lorem Est aliquip in ex magna aliquip.",
+                "section-main": {
+                    "title-up": "netherlands",
+                    "title-down": "AMSTERDAM"
+                }, 
+                "card-background": {
+                    "img": "http://localhost:3000/img/Amsterdam.jpg",
+                    "alt": "Amsterdam"                    
+                }
+            }
+        },"card-seven": {
+            "content": {
+                "text": "lorem Est aliquip in ex magna aliquip.",
+                "section-main": {
+                    "title-up": "united kingom",
+                    "title-down": "",
+                    "logo": "http://localhost:3000/img/Logo.svg"
+                }, 
+                "card-background": {
+                    "img": "http://localhost:3000/img/London.jpg",
+                    "alt": "Venice"                    
+                }
+            }
+        }        
     }
 }
 
