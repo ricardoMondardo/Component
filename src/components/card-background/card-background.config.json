@@ -1,0 +1,6 @@
+{
+    "context": {
+        "img" : "http://localhost:3000/img/Venice.jpg",
+        "alt" : "VENICE"
+    }
+}

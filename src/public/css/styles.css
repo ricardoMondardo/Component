@@ -1,3 +1,11 @@
+.c-card__img, .c-card__shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
 .c-image-background, .c-shadow-background {
   width: 100%;
   height: 100%;
@@ -6,14 +14,10 @@
 .c-shadow-background {
   background-color: rgba(128, 128, 128, 0.38); }
 
-.c-logo {
-  width: 53%; }
-
 .c-button {
   color: white; }
 
 .c-title {
-  width: 100%;
   text-align: center;
   font-size: 13.5px;
   letter-spacing: 2.5px;
@@ -28,13 +32,28 @@
   font-size: 13px;
   letter-spacing: 0.6px; }
 
-.c-card__img, .c-card__shadow {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1; }
+.c-section-main {
+  position: relative;
+  width: 200px;
+  height: 200px; }
+  .c-section-main__up {
+    position: absolute;
+    width: 100%;
+    top: 35%; }
+  .c-section-main__down {
+    position: absolute;
+    width: 100%;
+    top: 48%; }
+  .c-section-main--main-card__up {
+    top: 18%; }
+  .c-section-main--main-card__down {
+    top: 28%; }
+  @media (min-width: 600px) {
+    .c-section-main--main-card__up {
+      top: 44%; }
+    .c-section-main--main-card__down {
+      top: 60%;
+      width: 194px; } }
 
 .c-card {
   position: relative;
@@ -42,16 +61,11 @@
   height: 285px;
   color: white;
   font-family: 'Open Sans', sans-serif; }
-  .c-card__title-one {
+  .c-card__section-main {
     position: absolute;
-    left: 0px;
-    top: 39%; }
-  .c-card__title-one_main {
-    top: 25%; }
-  .c-card__title-two {
-    position: absolute;
-    left: 0%;
-    top: 47%; }
+    top: 15%;
+    left: 15%;
+    transition: top 2s, transform 1s 1s linear; }
   .c-card__logo {
     position: absolute;
     left: 23%;
@@ -75,27 +89,15 @@
     .c-card--sm {
       width: 220px;
       height: 360px; }
-    .c-card__logo {
-      width: 27%;
-      left: 36%;
-      top: 37%; }
+    .c-card__section-main {
+      left: 40%;
+      top: 15%; }
     .c-card__message {
       top: 60%;
       left: 23%;
       width: 52%; }
-    .c-card:--animaiton {
-      animation-name: example;
-      animation-duration: 2s; } }
-
-@keyframes example {
-  0% {
-    top: 0%; }
-  25% {
-    top: 25%; }
-  50% {
-    top: 50%; }
-  100% {
-    top: 100%; } }
+    .c-card__title-one--animated {
+      top: 20%; } }
 
 .c-card-grid {
   display: grid;

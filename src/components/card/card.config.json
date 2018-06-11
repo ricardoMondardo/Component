@@ -1,15 +1,38 @@
 {
     "context": {
-        "main-card": {
-            "title": "front-end",
-            "title-big": "valtech",
-            "img": "http://localhost:3000/img/Lagoa.jpg",
-            "alt": "Lagoa"
+        "card": {
+            "text": "lorem Est aliquip in ex magna aliquip.",
+            "section-main": {
+                "title-up": "italy",
+                "title-down": "VENICE"
+            }, 
+            "card-background": {
+                "img": "http://localhost:3000/img/Venice.jpg",
+                "alt": "Venice"            
+            }
         },
-        "italy": {
-            "title": "italy",
-            "title-big": "VENICE",
-            "img": "http://localhost:3000/img/Venice.jpg"
+        "card-animated": {            
+            "text": "lorem Est aliquip in ex magna aliquip.",
+            "section-main": {
+                "title-up": "italy",
+                "title-down": "VENICE"
+            }, 
+            "card-background": {
+                "img": "http://localhost:3000/img/Venice.jpg",
+                "alt": "Venice"            
+            }
+        },
+        "card-main": {
+            "text": "lorem Est aliquip in ex magna aliquip. lorem Est aliquip in ex magna aliquip lorem Est aliquip in ex magna aliquip",
+            "section-main": {
+                "title-up": "front-end",
+                "title-down": "",
+                "logo": "http://localhost:3000/img/Logo.svg"
+            }, 
+            "card-background": {
+                "img": "http://localhost:3000/img/Lagoa.jpg",
+                "alt": "Lagoa"            
+            }
         }
     }
 }

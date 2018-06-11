@@ -1,6 +1,7 @@
 {
     "context": {
-        "title": "Element",
-        "title-big": "Element"
+        "title-up": "UP",
+        "title-down": "Down",
+        "logo": "http://localhost:3000/img/Logo.svg"
     }
 }

@@ -1,9 +1,10 @@
 <div class="c-card c-card--biger">
-    <img class="c-card__img c-image-background" src="{{main-card.img}}" alt="{{main-card.alt}}">            
-    <div class="c-card__shadow c-shadow-background"></div>         
     
-    <div class="c-card__title-one c-card__title-one_main c-title">{{main-card.title}}</div>        
-    <img class="c-card__logo c-logo" src="http://localhost:3000/img/Logo.svg" alt="logo">
+    {{render "@card-background" card-main.card-background}}    
+    
+    <div class="c-card__section-main">
+        {{render "@section-main--logo" card-main.section-main}}
+    </div>    
 
-    <div class="c-card__message c-message">{{main-card.text}}</div>                                     
+    <div class="c-card__message c-message">{{card-main.text}}</div>                                     
 </div>

@@ -1,3 +1,12 @@
+%background-position {
+    position: absolute;        
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
 %size-backgroun {
     width: 100%;
     height: 100%;
@@ -11,8 +20,4 @@
 .c-shadow-background {
     background-color: rgba(128, 128, 128, 0.38);
     @extend %size-backgroun;         
-}
-
-.c-logo {
-    width: 53%;
 }

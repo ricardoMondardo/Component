@@ -1,7 +1,9 @@
 <div class="c-card">    
-    <img class="c-card__img c-image-background" src="{{italy.img}}" alt="{{italy.alt}}">            
-    <div class="c-card__shadow c-shadow-background"></div>         
+    
+    {{render "@card-background" card.card-background}}
 
-    <div class="c-card__title-one c-title">{{italy.title}}</div>        
-    <div class="c-card__title-two c-title c-title_big">{{italy.title-big}}</div>                        
+    <div class="c-card__section-main">
+        {{render "@section-main" card.section-main}}
+    </div>    
 </div>
+    
