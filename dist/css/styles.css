@@ -1,18 +1,130 @@
-.card {
-  /*
-    shouldn't set the external geometry (margin) or positioning for the block, this is DIV/BLOCK
-    it is possible to move? it is possible to reuse?
-    */
-  border-radius: 10px;
-  border: solid 1px green;
-  /*
-    @at-root .card--modifier {
-    } 
-    */ }
-  .card__title {
-    color: aquamarine; }
+.c-card__button {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear; }
 
-.card-grid {
+.c-card__img, .c-card__shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
+.c-image-background, .c-shadow-background {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px; }
+
+.c-shadow-background {
+  background-color: rgba(84, 84, 84, 0.5); }
+
+.c-logo {
+  width: 135px; }
+
+.c-title {
+  text-align: center;
+  font-size: 13.5px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase; }
+  .c-title--big {
+    font-size: 27px;
+    font-weight: 900; }
+
+.c-message {
+  text-align: center;
+  line-height: 19px;
+  font-size: 13px;
+  letter-spacing: 0.6px; }
+
+.c-button {
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px white;
+  color: white;
+  background-color: transparent; }
+
+.c-section-main {
+  width: 200px;
+  height: 85px;
+  line-height: 40px; }
+  .c-section-main__logo {
+    width: 135px;
+    padding-left: 37px; }
+
+.c-card {
+  position: relative;
+  width: 285px;
+  height: 285px;
+  color: white;
+  font-family: 'Open Sans', sans-serif; }
+  .c-card__section-main {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 2s, transform 1s 1s linear; }
+  .c-card__message {
+    position: absolute;
+    top: 60%;
+    width: 80%;
+    left: 10%;
+    right: 10%; }
+  .c-card__message--anime {
+    visibility: hidden;
+    opacity: 0;
+    transition: top 2s, transform 1s 1s linear,  visibility 0s, opacity 0.5s linear; }
+  .c-card__button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%); }
+  @media (min-width: 600px) {
+    .c-card--bigger {
+      width: 940px;
+      height: 520px; }
+    .c-card--middle {
+      width: 460px;
+      height: 360px; }
+    .c-card--sm {
+      width: 220px;
+      height: 360px; }
+    .c-card__section-main {
+      top: 35%; }
+    .c-card__button--animated {
+      visibility: visible;
+      opacity: 1; }
+    .c-card__message--animated {
+      top: 40%;
+      visibility: visible;
+      opacity: 1; }
+    .c-card__section-main--animated {
+      top: 10%; }
+    .c-card__shadow--animated {
+      background-color: rgba(84, 84, 84, 0.8); } }
+
+.c-card-grid {
   display: grid;
   grid-template-columns: auto;
-  grid-gap: 10px; }
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  width: 860px;
+  padding: 5px; }
+  @media (min-width: 600px) {
+    .c-card-grid {
+      grid-template-columns: 230px 230px 230px 230px; }
+      .c-card-grid .c-card-grid__card-one {
+        grid-column: 1 / 4; }
+      .c-card-grid .c-card-grid__card-two {
+        grid-column: 1 / 2; }
+      .c-card-grid .c-card-grid__card-three {
+        grid-column: 3 / 3; }
+      .c-card-grid .c-card-grid__card-for {
+        grid-column: 4 / 4; }
+      .c-card-grid .c-card-grid__card-five {
+        grid-column: 1 / 1; }
+      .c-card-grid .c-card-grid__card-six {
+        grid-column: 2 / 2; }
+      .c-card-grid .c-card-grid__card-seven {
+        grid-column: 3 / 4; } }

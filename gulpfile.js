@@ -38,7 +38,7 @@ gulp.task('start', function(){
     });
 });
 
-gulp.task('build', function(){
+gulp.task('build', ['sass','start'] ,function(){
     const builder = fractal.web.builder();
     builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
     builder.on('error', err => logger.error(err.message));

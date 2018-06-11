@@ -153,17 +153,16 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-565e0635858b22c317e0710eea538289-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Mickey Mouse<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>mickey@mouse.com<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Daffy Duck<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>daffy@duck.com<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Daffy Duck<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>daffy@duck.com<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__img c-image-background js-lazy-image"</span> <span class="hljs-attr">data-src</span>=<span class="hljs-string">"http://localhost:3000/img/Venice.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Venice"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__shadow c-shadow-background"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__section-main"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-section-main"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-section-main__up c-title"</span>&gt;</span>italy<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-section-main__down c-title c-title--big"</span>&gt;</span>VENICE<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -172,12 +171,13 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-565e0635858b22c317e0710eea538289-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> cards}}</span><span class="xml">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span></span><span class="hljs-template-variable">{{smailTitle}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span></span><span class="hljs-template-variable">{{bigTitle}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml"></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card"</span>&gt;</span>        
+    </span><span class="hljs-template-variable">{{render "<a href="card-background.html">@card-background</a>" content.card-background}}</span><span class="xml">
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__section-main"</span>&gt;</span>
+        </span><span class="hljs-template-variable">{{render "<a href="section-main.html">@section-main</a>" content.section-main}}</span><span class="xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>        
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -187,26 +187,18 @@
         
             
             <pre>{
-  <span class="hljs-attr">"cards"</span>: [
-    {
-      <span class="hljs-attr">"smailTitle"</span>: <span class="hljs-string">"Mickey Mouse"</span>,
-      <span class="hljs-attr">"bigTitle"</span>: <span class="hljs-string">"mickey@mouse.com"</span>,
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"http://localhost:3000/img/Amsterdam--full.jpg"</span>,
-      <span class="hljs-attr">"alt"</span>: <span class="hljs-string">"Amsterdam"</span>
+  <span class="hljs-attr">"content"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"lorem Est aliquip in ex magna aliquip. lorem Est aliquip in ex magna aliquip. lorem Est aliquip in ex magna aliquip"</span>,
+    <span class="hljs-attr">"section-main"</span>: {
+      <span class="hljs-attr">"title-up"</span>: <span class="hljs-string">"italy"</span>,
+      <span class="hljs-attr">"title-down"</span>: <span class="hljs-string">"VENICE"</span>,
+      <span class="hljs-attr">"logo"</span>: <span class="hljs-string">"http://localhost:3000/img/Logo.svg"</span>
     },
-    {
-      <span class="hljs-attr">"smailTitle"</span>: <span class="hljs-string">"Daffy Duck"</span>,
-      <span class="hljs-attr">"bigTitle"</span>: <span class="hljs-string">"daffy@duck.com"</span>,
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"http://localhost:3000/img/Barcelona.jpg"</span>,
-      <span class="hljs-attr">"alt"</span>: <span class="hljs-string">"Barcelona"</span>
-    },
-    {
-      <span class="hljs-attr">"smailTitle"</span>: <span class="hljs-string">"Daffy Duck"</span>,
-      <span class="hljs-attr">"bigTitle"</span>: <span class="hljs-string">"daffy@duck.com"</span>,
-      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"http://localhost:3000/img/Berlin.jpg"</span>,
-      <span class="hljs-attr">"alt"</span>: <span class="hljs-string">"Berlin"</span>
+    <span class="hljs-attr">"card-background"</span>: {
+      <span class="hljs-attr">"img"</span>: <span class="hljs-string">"http://localhost:3000/img/Venice.jpg"</span>,
+      <span class="hljs-attr">"alt"</span>: <span class="hljs-string">"Venice"</span>
     }
-  ]
+  }
 }</pre>
             
         
@@ -232,6 +224,33 @@
         
         
         <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(5)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="card--default.html">
+                    <span>Default</span>
+                </a>, 
+            
+                <a href="card--animated.html">
+                    <span>Animated</span>
+                </a>, 
+            
+                <a href="card--bigger.html">
+                    <span>Bigger</span>
+                </a>, 
+            
+                <a href="card--middle.html">
+                    <span>Middle</span>
+                </a>, 
+            
+                <a href="card--small.html">
+                    <span>Small</span>
+                </a>
+            
+            </span>
+        </li>
+        
+        <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
             <span class="Meta-value">
                 <ul>
@@ -252,6 +271,17 @@
             <strong class="Meta-key">Filesystem Path:</strong>
             <span class="Meta-value">src\components\card\card.hbs</span>
         </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(2)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="card-background.html">@<span>card-background</span></a>, 
+            
+                <a href="section-main.html">@<span>section-main</span></a>
+            
+            </span>
+        </li class="Meta-item">
         
         
         <li class="Meta-item">
@@ -328,10 +358,146 @@
         
     
         
-        
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-card">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Card</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="card--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="card--animated.html" data-pjax>
+                <span>Animated</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="card--bigger.html" data-pjax>
+                <span>Bigger</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="card--middle.html" data-pjax>
+                <span>Middle</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="card--small.html" data-pjax>
+                <span>Small</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="card-background.html" data-pjax>
+                <span>Card Background</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -363,7 +529,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -372,6 +538,70 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-section-main">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Section Main</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="section-main--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="section-main--with-logo.html" data-pjax>
+                <span>With Logo</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     

@@ -55,17 +55,21 @@
         &__message--anime {          
             visibility: hidden;
             opacity: 0;
-            transition: top 2s, transform 1s 1s linear, 
-                        visibility 0s 2s, opacity 2s linear;
+            transition: top 1s, 
+                        transform 1s 1s linear, 
+                        visibility 1s,
+                        opacity 1s linear;
         }                            
         &__button {
             visibility: hidden;
             opacity: 0;
-            transition: visibility 0s 2s, opacity 2s linear;            
+            transition: visibility 0s 1s, 
+                        opacity 1s linear;            
         }
 
         &__section-main--anime {                    
-            transition: top 2s, transform 1s 1s linear;       
+            transition: top 1s, 
+                        transform 1s linear;       
         }        
         &__section-main--animated {
             top: 10%;          
@@ -75,14 +79,14 @@
         &__button--animated {
             visibility: visible;
             opacity: 1;
-            transition: opacity 2s linear;        
+            transition: opacity 1s linear;        
         }        
         &__message--animated {
             top: 40%;
             visibility: visible;
             opacity: 1;
-            transition: top 2s, transform 1s 1s linear,
-                        opacity 2s linear;
+            transition: top 1s, transform 1s 1s linear,
+                        opacity 1s linear;
         }
 
         &__shadow--animated {

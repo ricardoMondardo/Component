@@ -5,22 +5,25 @@
 <head>
     <meta charset="utf-8">    
     <title>Preview Layout</title>
-    <link rel="stylesheet" href="../../css/styles.css">
-    <script src="../../js/app.js"></script>
+    <link rel="stylesheet" href="../../css/styles.css">    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-    <div class="card">
-        <h3>Mickey Mouse</h3>
-        <h1 class="card__title">mickey@mouse.com</h1>
-    </div>
-    <div class="card">
-        <h3>Daffy Duck</h3>
-        <h1 class="card__title">daffy@duck.com</h1>
-    </div>
-    <div class="card">
-        <h3>Daffy Duck</h3>
-        <h1 class="card__title">daffy@duck.com</h1>
-    </div>
+<div class="c-card">        
+    <img class="c-card__img c-image-background js-lazy-image" data-src="http://localhost:3000/img/Venice.jpg" alt="Venice">            
+<div class="c-card__shadow c-shadow-background"></div>
 
+
+    <div class="c-card__section-main">
+        <div class="c-section-main">
+    <div class="c-section-main__up c-title">italy</div>        
+    <div class="c-section-main__down c-title c-title--big">VENICE</div>
+</div>
+    </div>        
+</div>
+    
+
+<script src="../../js/component.js"></script>
+<script src="../../js/lazy-load-img.js"></script>
 </body>
 </html>
