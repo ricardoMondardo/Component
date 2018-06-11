@@ -1,3 +1,9 @@
+%fade-in {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;            
+}
+
 %background-position {
     position: absolute;        
     top: 0;
@@ -24,8 +30,4 @@
 
 .c-logo {
     width: 135px;
-}
-
-.c-hidden {
-    display: none;
 }

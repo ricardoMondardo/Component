@@ -7,8 +7,6 @@ if(card) {
     const shadow = document.querySelector('.c-card__shadow');
     const message = document.querySelector('.c-card__message');
 
-    message.classList.add('c-hidden');
-
     card.addEventListener("mouseenter", ()=>{
         fnShowDetail();
     });
@@ -30,7 +28,6 @@ if(card) {
         button.classList.remove('c-card__button--animated');
         shadow.classList.remove('c-card__shadow--animated');                
         message.classList.remove('c-card__message--animated');
-        message.classList.add('c-hidden');
         console.log("close details");
     }
 }

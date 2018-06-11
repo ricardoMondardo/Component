@@ -27,17 +27,24 @@
         top: 60%;
         width: 80%;
         left: 10%;
-        right: 10%;
+        right: 10%;        
     }  
 
+    &__message--anime {
+        visibility: hidden;
+        opacity: 0;
+        transition: top 2s, transform 1s 1s linear, 
+                    visibility 0s, opacity 0.5s linear;            
+    }      
+    
+
     &__button {
-        display: none;
         position: absolute;
         bottom: 10%;                        
         left: 50%;
         transform: translateX(-50%); 
-        transition-delay: 4s;                           
-        transition: display 2s, transform 1s 1s linear;
+
+        @extend %fade-in;
     }
 
     @media (min-width: 600px) {        
@@ -59,16 +66,20 @@
         }
 
         &__button--animated {
-            display: block;
+            visibility: visible;
+            opacity: 1;
         }        
+        &__message--animated {
+            top: 40%;
+            visibility: visible;
+            opacity: 1;
+        }      
+
         &__section-main--animated {
             top: 10%;          
         }
         &__shadow--animated {
             background-color: rgba(84, 84, 84, 0.8)
         }          
-        &__message--animated {
-            display: block;
-        }      
     }
 }

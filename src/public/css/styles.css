@@ -1,3 +1,8 @@
+.c-card__button {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear; }
+
 .c-card__img, .c-card__shadow {
   position: absolute;
   top: 0;
@@ -16,9 +21,6 @@
 
 .c-logo {
   width: 135px; }
-
-.c-hidden {
-  display: none; }
 
 .c-title {
   text-align: center;
@@ -69,14 +71,15 @@
     width: 80%;
     left: 10%;
     right: 10%; }
+  .c-card__message--anime {
+    visibility: hidden;
+    opacity: 0;
+    transition: top 2s, transform 1s 1s linear,  visibility 0s, opacity 0.5s linear; }
   .c-card__button {
-    display: none;
     position: absolute;
     bottom: 10%;
     left: 50%;
-    transform: translateX(-50%);
-    transition-delay: 4s;
-    transition: display 2s, transform 1s 1s linear; }
+    transform: translateX(-50%); }
   @media (min-width: 600px) {
     .c-card--bigger {
       width: 940px;
@@ -90,13 +93,16 @@
     .c-card__section-main {
       top: 35%; }
     .c-card__button--animated {
-      display: block; }
+      visibility: visible;
+      opacity: 1; }
+    .c-card__message--animated {
+      top: 40%;
+      visibility: visible;
+      opacity: 1; }
     .c-card__section-main--animated {
       top: 10%; }
     .c-card__shadow--animated {
-      background-color: rgba(84, 84, 84, 0.8); }
-    .c-card__message--animated {
-      display: block; } }
+      background-color: rgba(84, 84, 84, 0.8); } }
 
 .c-card-grid {
   display: grid;
