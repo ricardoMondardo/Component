@@ -1,8 +1,3 @@
-.c-card__button {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear; }
-
 .c-card__img, .c-card__shadow {
   position: absolute;
   top: 0;
@@ -63,18 +58,13 @@
     position: absolute;
     top: 25%;
     left: 50%;
-    transform: translateX(-50%);
-    transition: top 2s, transform 1s 1s linear; }
+    transform: translateX(-50%); }
   .c-card__message {
     position: absolute;
     top: 60%;
     width: 80%;
     left: 10%;
     right: 10%; }
-  .c-card__message--anime {
-    visibility: hidden;
-    opacity: 0;
-    transition: top 2s, transform 1s 1s linear,  visibility 0s, opacity 0.5s linear; }
   .c-card__button {
     position: absolute;
     bottom: 10%;
@@ -92,6 +82,16 @@
       height: 360px; }
     .c-card__section-main {
       top: 35%; }
+    .c-card__message--anime {
+      visibility: hidden;
+      opacity: 0;
+      transition: top 2s, transform 1s 1s linear,  visibility 0s, opacity 0.5s linear; }
+    .c-card__section-main--anime {
+      transition: top 2s, transform 1s 1s linear; }
+    .c-card__button {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear; }
     .c-card__button--animated {
       visibility: visible;
       opacity: 1; }

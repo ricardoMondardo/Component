@@ -9,7 +9,6 @@
     &__img {    
         @extend %background-position;
     }
-
     &__shadow {
         @extend %background-position;        
     }        
@@ -19,32 +18,19 @@
         top: 25%;
         left: 50%;
         transform: translateX(-50%);
-        transition: top 2s, transform 1s 1s linear;       
     }        
-
     &__message {
         position: absolute;
         top: 60%;
         width: 80%;
         left: 10%;
         right: 10%;        
-    }  
-
-    &__message--anime {
-        visibility: hidden;
-        opacity: 0;
-        transition: top 2s, transform 1s 1s linear, 
-                    visibility 0s, opacity 0.5s linear;            
     }      
-    
-
     &__button {
         position: absolute;
         bottom: 10%;                        
         left: 50%;
-        transform: translateX(-50%); 
-
-        @extend %fade-in;
+        transform: translateX(-50%);         
     }
 
     @media (min-width: 600px) {        
@@ -65,6 +51,21 @@
             top: 35%; //
         }
 
+        &__message--anime {
+            visibility: hidden;
+            opacity: 0;
+            transition: top 2s, transform 1s 1s linear, 
+                        visibility 0s, opacity 0.5s linear;            
+        }                            
+        &__section-main--anime {                    
+            transition: top 2s, transform 1s 1s linear;       
+        }
+        &__button {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;            
+        }
+
         &__button--animated {
             visibility: visible;
             opacity: 1;
@@ -74,7 +75,6 @@
             visibility: visible;
             opacity: 1;
         }      
-
         &__section-main--animated {
             top: 10%;          
         }
