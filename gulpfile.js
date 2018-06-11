@@ -14,6 +14,8 @@ fractal.web.set('builder.dest', 'dist');
 fractal.docs.set('path', `${__dirname}/src/docs`);
 fractal.components.set('path', `${__dirname}/src/components`);
 
+fractal.web.set('server.port', 3000); 
+
 const logger = fractal.cli.console;
 
 gulp.task('sass', () => {
