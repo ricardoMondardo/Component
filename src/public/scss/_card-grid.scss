@@ -7,7 +7,16 @@
     width: 860px;
     padding: 5px;
 
-    @media (min-width: 600px) {
+    @media (min-width: 365px) {
+        grid-template-columns: 280px 280px;
+        
+        .c-card-grid__item {
+            display: inline;
+        }
+        
+    }        
+
+    @media (min-width: 665px) {
         grid-template-columns: 230px 230px 230px 230px;
 
         .c-card-grid__item:nth-child(1){

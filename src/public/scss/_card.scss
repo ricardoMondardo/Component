@@ -40,20 +40,7 @@
         transform: translateX(-50%);         
     }
 
-    @media (min-width: 600px) {        
-        &--bigger {
-            width: 940px;
-            height: 529px;        
-        }
-        &--middle {
-            width: 460px;
-            height: 360px;        
-        }        
-        &--sm {
-            width: 220px;
-            height: 360px;        
-        }                 
-
+    @media (min-width: 365px) {        
         &__section-main {
             top: 35%; //
             transition: top 1s, 
@@ -97,9 +84,23 @@
             transition: top 1s, transform 1s 1s linear,
                         opacity 1s linear;
         }
-
         &__shadow--animated {
             background-color: rgba(84, 84, 84, 0.8)
         }          
+    }
+
+    @media (min-width: 665px) {        
+        &--bigger {
+            width: 940px;
+            height: 529px;        
+        }
+        &--middle {
+            width: 460px;
+            height: 360px;        
+        }        
+        &--sm {
+            width: 220px;
+            height: 360px;        
+        }                         
     }
 }
