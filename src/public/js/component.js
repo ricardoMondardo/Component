@@ -4,7 +4,7 @@ if(card) {
 
     const title = document.querySelector('.c-card__section-main');
     const button = document.querySelector('.c-card__button');
-    const shadow = document.querySelector('.c-card__shadow');
+    const shadow = document.querySelector('.c-shadow-background');
     const message = document.querySelector('.c-card__message');
 
     card.addEventListener("mouseenter", ()=>{

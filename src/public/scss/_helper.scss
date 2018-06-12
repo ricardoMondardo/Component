@@ -1,12 +1,3 @@
-%background-position {
-    position: absolute;        
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
-
 %size-backgroun {
     width: 100%;
     height: 100%;
@@ -20,6 +11,19 @@
 .c-shadow-background {
     background-color: rgba(84, 84, 84, 0.5);
     @extend %size-backgroun;         
+}
+
+.c-blur {
+    animation: blur 0.5s;
+
+}
+
+@keyframes blur {
+     0% { filter: blur(40px); }
+    25% { filter: blur(25px); }
+    50% { filter: blur(10px); }
+    75% { filter: blur(5px); }
+    100% { filter: blur(0px); }
 }
 
 .c-logo {

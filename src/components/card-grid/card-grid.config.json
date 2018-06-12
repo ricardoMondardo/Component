@@ -9,6 +9,7 @@
                     "logo": "http://localhost:3000/img/Logo.svg"
                 }, 
                 "card-background": {
+                    "img-sm": "http://localhost:3000/img/Lagoa-sm.jpg",
                     "img": "http://localhost:3000/img/Lagoa.jpg",
                     "alt": "Lagoa"                    
                 }
@@ -22,6 +23,7 @@
                     "logo": ""
                 }, 
                 "card-background": {
+                    "img-sm": "http://localhost:3000/img/Venice-sm.jpg",
                     "img": "http://localhost:3000/img/Venice.jpg",
                     "alt": "Venice"                    
                 }
@@ -34,6 +36,7 @@
                     "title-down": "BERLIN"
                 }, 
                 "card-background": {
+                    "img-sm": "http://localhost:3000/img/Berlin-sm.jpg",
                     "img": "http://localhost:3000/img/Berlin.jpg",
                     "alt": "Berlin"                    
                 }
@@ -46,6 +49,7 @@
                     "title-down": "BARCELONA"
                 }, 
                 "card-background": {
+                    "img-sm": "http://localhost:3000/img/Barcelona-sm.jpg",
                     "img": "http://localhost:3000/img/Barcelona.jpg",
                     "alt": "Barcelona"                    
                 }
@@ -58,6 +62,7 @@
                     "title-down": "PARIS"
                 }, 
                 "card-background": {
+                    "img-sm": "http://localhost:3000/img/Paris-sm.jpg",
                     "img": "http://localhost:3000/img/Paris.jpg",
                     "alt": "Paris"                    
                 }
@@ -70,6 +75,7 @@
                     "title-down": "AMSTERDAM"
                 }, 
                 "card-background": {
+                    "img-sm": "http://localhost:3000/img/Amsterdam-sm.jpg",
                     "img": "http://localhost:3000/img/Amsterdam.jpg",
                     "alt": "Amsterdam"                    
                 }
@@ -83,6 +89,7 @@
                     "logo": "http://localhost:3000/img/Logo.svg"
                 }, 
                 "card-background": {
+                    "img-sm": "http://localhost:3000/img/London-sm.jpg",
                     "img": "http://localhost:3000/img/London.jpg",
                     "alt": "Venice"                    
                 }
