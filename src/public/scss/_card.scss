@@ -14,7 +14,6 @@
         right: 0;
         z-index: -1;
     }
-
     &__section-main {
         position: absolute;
         top: 25%;
@@ -46,9 +45,7 @@
             transition: top 1s, 
                         transform 1s linear;                   
         }
-
-        //Fade out
-        &__message--anime {          
+        &__message {          
             visibility: hidden;
             opacity: 0;
             transition: top 1s, 
@@ -58,7 +55,7 @@
         }                            
         &__button {
             visibility: hidden;
-            opacity: 0;
+            opacity: 0; 
             transition: visibility 0s 1s, 
                         opacity 1s linear;            
         }
@@ -71,22 +68,26 @@
             top: 10%;          
         }
 
-        //fade in
-        &__button--animated {
-            visibility: visible;
-            opacity: 1;
-            transition: opacity 1s linear;        
+        &:hover {
+            .c-card__section-main {
+              top: 10%;
+            } 
+            .c-card__button {
+              visibility: visible;
+              opacity: 1;
+              transition: opacity 1s linear;
+            }
+            .c-card__message {
+              top: 40%;
+              visibility: visible;
+              opacity: 1;
+              transition: top 1s, transform 1s 1s linear, opacity 1s linear;
+            }
+            .c-card__background {
+              background-color: rgba(84, 84, 84, 0.8)
+            }
         }        
-        &__message--animated {
-            top: 40%;
-            visibility: visible;
-            opacity: 1;
-            transition: top 1s, transform 1s 1s linear,
-                        opacity 1s linear;
-        }
-        &__shadow--animated {
-            background-color: rgba(84, 84, 84, 0.8)
-        }          
+     
     }
 
     @media (min-width: 665px) {        

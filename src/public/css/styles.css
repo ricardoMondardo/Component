@@ -92,7 +92,7 @@
     .c-card__section-main {
       top: 35%;
       transition: top 1s,  transform 1s linear; }
-    .c-card__message--anime {
+    .c-card__message {
       visibility: hidden;
       opacity: 0;
       transition: top 1s,  transform 1s 1s linear,  visibility 1s, opacity 1s linear; }
@@ -104,16 +104,18 @@
       transition: top 1s,  transform 1s linear; }
     .c-card__section-main--animated {
       top: 10%; }
-    .c-card__button--animated {
+    .c-card:hover .c-card__section-main {
+      top: 10%; }
+    .c-card:hover .c-card__button {
       visibility: visible;
       opacity: 1;
       transition: opacity 1s linear; }
-    .c-card__message--animated {
+    .c-card:hover .c-card__message {
       top: 40%;
       visibility: visible;
       opacity: 1;
-      transition: top 1s, transform 1s 1s linear, opacity 1s linear; }
-    .c-card__shadow--animated {
+      transition: top 1s, transform 1s 1s linear, opacity 1s linear; }
+    .c-card:hover .c-card__background {
       background-color: rgba(84, 84, 84, 0.8); } }
   @media (min-width: 665px) {
     .c-card--bigger {
