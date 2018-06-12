@@ -9,6 +9,7 @@
                     "logo": "http://localhost:3000/img/logo/Logo.svg"
                 }, 
                 "card-background": {
+                    "img-low": "http://localhost:3000/img/low/Lagoa.jpg",
                     "img-sm": "http://localhost:3000/img/mobile/Lagoa.jpg",
                     "img": "http://localhost:3000/img/Lagoa.jpg",
                     "alt": "Lagoa"                    
@@ -23,6 +24,7 @@
                     "logo": ""
                 }, 
                 "card-background": {
+                    "img-low": "http://localhost:3000/img/low/Venice.jpg",
                     "img-sm": "http://localhost:3000/img/mobile/Venice.jpg",
                     "img": "http://localhost:3000/img/Venice.jpg",
                     "alt": "Venice"                    
@@ -36,6 +38,7 @@
                     "title-down": "BERLIN"
                 }, 
                 "card-background": {
+                    "img-low": "http://localhost:3000/img/low/Berlin.jpg",
                     "img-sm": "http://localhost:3000/img/mobile/Berlin.jpg",
                     "img": "http://localhost:3000/img/Berlin.jpg",
                     "alt": "Berlin"                    
@@ -49,6 +52,7 @@
                     "title-down": "BARCELONA"
                 }, 
                 "card-background": {
+                    "img-low": "http://localhost:3000/img/low/Barcelona.jpg",
                     "img-sm": "http://localhost:3000/img/mobile/Barcelona.jpg",
                     "img": "http://localhost:3000/img/Barcelona.jpg",
                     "alt": "Barcelona"                    
@@ -62,6 +66,7 @@
                     "title-down": "PARIS"
                 }, 
                 "card-background": {
+                    "img-low": "http://localhost:3000/img/low/Paris.jpg",
                     "img-sm": "http://localhost:3000/img/mobile/Paris.jpg",
                     "img": "http://localhost:3000/img/Paris.jpg",
                     "alt": "Paris"                    
@@ -75,6 +80,7 @@
                     "title-down": "AMSTERDAM"
                 }, 
                 "card-background": {
+                    "img-low": "http://localhost:3000/img/low/Amsterdam.jpg",
                     "img-sm": "http://localhost:3000/img/mobile/Amsterdam.jpg",
                     "img": "http://localhost:3000/img/Amsterdam.jpg",
                     "alt": "Amsterdam"                    
@@ -88,6 +94,7 @@
                     "title-down": "LONDON"
                 }, 
                 "card-background": {
+                    "img-low": "http://localhost:3000/img/low/London.jpg",
                     "img-sm": "http://localhost:3000/img/mobile/London.jpg",
                     "img": "http://localhost:3000/img/London.jpg",
                     "alt": "Venice"                    

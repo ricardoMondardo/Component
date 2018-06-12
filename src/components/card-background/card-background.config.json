@@ -1,7 +1,8 @@
 {
     "context": {
-        "img": "http://localhost:3000/img/Venice.jpg",
+        "img-low": "http://localhost:3000/img/low/Venice.jpg",
         "img-sm": "http://localhost:3000/img/mobile/Venice.jpg",
+        "img": "http://localhost:3000/img/Venice.jpg",        
         "alt": "Venice"            
     }
 }

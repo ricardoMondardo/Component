@@ -8,8 +8,9 @@
                 "logo": "http://localhost:3000/img/logo/Logo.svg"
             }, 
             "card-background": {
-                "img": "http://localhost:3000/img/Lagoa.jpg",
+                "img-low": "http://localhost:3000/img/low/Venice.jpg",
                 "img-sm": "http://localhost:3000/img/mobile/Venice.jpg",
+                "img": "http://localhost:3000/img/Lagoa.jpg",                
                 "alt": "Venice"            
             }
         }
