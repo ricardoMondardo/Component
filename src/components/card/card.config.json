@@ -5,10 +5,11 @@
             "section-main": {
                 "title-up": "italy",
                 "title-down": "VENICE",
-                "logo": "http://localhost:3000/img/Logo.svg"
+                "logo": "http://localhost:3000/img/logo/Logo.svg"
             }, 
             "card-background": {
-                "img": "http://localhost:3000/img/Venice.jpg",
+                "img": "http://localhost:3000/img/Lagoa.jpg",
+                "img-sm": "http://localhost:3000/img/mobile/Venice.jpg",
                 "alt": "Venice"            
             }
         }

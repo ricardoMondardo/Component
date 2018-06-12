@@ -1,8 +1,8 @@
 .c-card {
 
     position: relative;
-    width: 285px;
-    height: 285px;
+    width: 282px;
+    height: 282px;
     color: white;
     font-family: 'Open Sans', sans-serif;
 
@@ -22,13 +22,18 @@
         transform: translateX(-50%);
     }        
     &__message {
+        visibility: hidden;
         position: absolute;
         top: 60%;
         width: 80%;
         left: 10%;
         right: 10%;        
     }      
+    &__message--main {
+        visibility: visible;
+    }          
     &__button {
+        visibility: hidden;
         position: absolute;
         bottom: 10%;                        
         left: 50%;
@@ -51,6 +56,8 @@
 
         &__section-main {
             top: 35%; //
+            transition: top 1s, 
+                        transform 1s linear;                   
         }
 
         //Fade out

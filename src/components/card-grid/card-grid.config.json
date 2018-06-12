@@ -6,10 +6,10 @@
                 "section-main": {
                     "title-up": "front-end",
                     "title-down": "",
-                    "logo": "http://localhost:3000/img/Logo.svg"
+                    "logo": "http://localhost:3000/img/logo/Logo.svg"
                 }, 
                 "card-background": {
-                    "img-sm": "http://localhost:3000/img/Lagoa-sm.jpg",
+                    "img-sm": "http://localhost:3000/img/mobile/Lagoa.jpg",
                     "img": "http://localhost:3000/img/Lagoa.jpg",
                     "alt": "Lagoa"                    
                 }
@@ -23,7 +23,7 @@
                     "logo": ""
                 }, 
                 "card-background": {
-                    "img-sm": "http://localhost:3000/img/Venice-sm.jpg",
+                    "img-sm": "http://localhost:3000/img/mobile/Venice.jpg",
                     "img": "http://localhost:3000/img/Venice.jpg",
                     "alt": "Venice"                    
                 }
@@ -36,7 +36,7 @@
                     "title-down": "BERLIN"
                 }, 
                 "card-background": {
-                    "img-sm": "http://localhost:3000/img/Berlin-sm.jpg",
+                    "img-sm": "http://localhost:3000/img/mobile/Berlin.jpg",
                     "img": "http://localhost:3000/img/Berlin.jpg",
                     "alt": "Berlin"                    
                 }
@@ -49,7 +49,7 @@
                     "title-down": "BARCELONA"
                 }, 
                 "card-background": {
-                    "img-sm": "http://localhost:3000/img/Barcelona-sm.jpg",
+                    "img-sm": "http://localhost:3000/img/mobile/Barcelona.jpg",
                     "img": "http://localhost:3000/img/Barcelona.jpg",
                     "alt": "Barcelona"                    
                 }
@@ -62,7 +62,7 @@
                     "title-down": "PARIS"
                 }, 
                 "card-background": {
-                    "img-sm": "http://localhost:3000/img/Paris-sm.jpg",
+                    "img-sm": "http://localhost:3000/img/mobile/Paris.jpg",
                     "img": "http://localhost:3000/img/Paris.jpg",
                     "alt": "Paris"                    
                 }
@@ -75,7 +75,7 @@
                     "title-down": "AMSTERDAM"
                 }, 
                 "card-background": {
-                    "img-sm": "http://localhost:3000/img/Amsterdam-sm.jpg",
+                    "img-sm": "http://localhost:3000/img/mobile/Amsterdam.jpg",
                     "img": "http://localhost:3000/img/Amsterdam.jpg",
                     "alt": "Amsterdam"                    
                 }
@@ -85,11 +85,10 @@
                 "text": "lorem Est aliquip in ex magna aliquip.",
                 "section-main": {
                     "title-up": "united kingom",
-                    "title-down": "LONDON",
-                    "logo": "http://localhost:3000/img/Logo.svg"
+                    "title-down": "LONDON"
                 }, 
                 "card-background": {
-                    "img-sm": "http://localhost:3000/img/London-sm.jpg",
+                    "img-sm": "http://localhost:3000/img/mobile/London.jpg",
                     "img": "http://localhost:3000/img/London.jpg",
                     "alt": "Venice"                    
                 }

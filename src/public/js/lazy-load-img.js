@@ -7,6 +7,8 @@ const config = {
 let imageCount = images.length;
 let observer;
 
+console.log('window.innerWidth: ' + window.innerWidth);
+
 if (!('IntersectionObserver' in window)) {
   loadImagesImmediately(images);
 } else {
@@ -77,6 +79,6 @@ function onIntersection(entries) {
  
 function applyImage(img, src) {
   img.classList.add('js-lazy-image--handled');
-  img.src = src;
-  img.classList.add('fade-in');
+  img.classList.add('c-blur');
+  img.src = src;  
 }

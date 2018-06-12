@@ -1,7 +1,10 @@
-<div class="c-card c-card--sm">
+<div class="c-card c-card--sm" onmouseover="mOver(this)" onmouseout="mOut(this)">
     {{render "@card-background" content.card-background}}    
     
     <div class="c-card__section-main">
         {{render "@section-main" content.section-main}}
-    </div>                                    
+    </div>                                
+
+    <div class="c-card__message c-message c-card__message--anime">{{content.text}}</div>                                     
+    <div class="c-card__button">{{render "@button"}}</div>          
 </div>

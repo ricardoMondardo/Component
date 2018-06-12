@@ -2,6 +2,6 @@
     "context": {        
         "title-up": "UP",
         "title-down": "Down",
-        "logo": "http://localhost:3000/img/Logo-black.svg"
+        "logo": "http://localhost:3000/img/logo/Logo-black.svg"
     }
 }
