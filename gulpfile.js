@@ -28,7 +28,7 @@ gulp.task('watch', () => {
     gulp.watch(`${__dirname}/src/public/scss/*.scss`, ['sass'])
 });        
 
-gulp.task('start', ['sass', 'watch'] ,function(){
+gulp.task('start',function(){
     const server = fractal.web.server({
         sync: true
     });

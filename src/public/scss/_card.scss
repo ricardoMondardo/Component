@@ -39,7 +39,7 @@
         transform: translateX(-50%);         
     }
 
-    @media (min-width: 365px) {        
+    @media (min-width: 615px) {        
         &__section-main {
             top: 35%; //
             transition: top 1s, 
@@ -90,7 +90,7 @@
      
     }
 
-    @media (min-width: 665px) {        
+    @media (min-width: 1034px) {        
         &--bigger {
             width: 940px;
             height: 529px;        
