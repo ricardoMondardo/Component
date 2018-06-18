@@ -117,7 +117,7 @@
       transition: top 1s, transform 1s 1s linear, opacity 1s linear; }
     .c-card:hover .c-card__background {
       background-color: rgba(84, 84, 84, 0.8); } }
-  @media (min-width: 1034px) {
+  @media (min-width: 1125px) {
     .c-card--bigger {
       width: 940px;
       height: 529px; }
@@ -171,7 +171,7 @@
         justify-self: start; }
       .c-card-grid .c-card-grid__item:nth-child(7) {
         justify-self: end; } }
-  @media (min-width: 1034px) {
+  @media (min-width: 1125px) {
     .c-card-grid {
       grid-template-columns: 28% 22% 22% 28%;
       width: 92%;
