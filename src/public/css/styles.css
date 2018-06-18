@@ -153,10 +153,10 @@
         justify-self: start; }
       .c-card-grid .c-card-grid__item:nth-child(7) {
         justify-self: end; } }
-  @media (min-width: 950px) {
+  @media (min-width: 960px) {
     .c-card-grid {
       grid-template-columns: 35% 30% 35%;
-      max-width: 950px; }
+      max-width: 965px; }
       .c-card-grid .c-card-grid__item:nth-child(1) {
         justify-self: end; }
       .c-card-grid .c-card-grid__item:nth-child(2) {
