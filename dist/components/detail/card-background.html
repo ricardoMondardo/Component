@@ -153,8 +153,9 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-661f67740dc3a4c5aaaf18503e731887-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__img c-image-background js-lazy-image"</span> <span class="hljs-attr">data-src</span>=<span class="hljs-string">"http://localhost:3000/img/Venice.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"VENICE"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__shadow c-shadow-background"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__background c-image-background js-lazy-image"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"http://localhost:3000/img/mobile/Venice.jpg 282w, http://localhost:3000/img/mobile/Venice.jpg 300w, http://localhost:3000/img/low/Venice.jpg 900w"</span> <span class="hljs-attr">data-src</span>=<span class="hljs-string">"http://localhost:3000/img/Venice.jpg"</span>
+    <span class="hljs-attr">alt</span>=<span class="hljs-string">"Venice"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__background c-shadow-background"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -162,8 +163,10 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-661f67740dc3a4c5aaaf18503e731887-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__img c-image-background js-lazy-image"</span> <span class="hljs-attr">data-src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{img}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{alt}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>            
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__shadow c-shadow-background"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__background c-image-background js-lazy-image"</span> 
+    <span class="hljs-attr">srcset</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{img-sm}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> 282w, </span></span></span><span class="hljs-template-variable">{{img-sm}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> 300w, </span></span></span><span class="hljs-template-variable">{{img-low}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> 900w"</span>    
+    <span class="hljs-attr">data-src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{img}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{alt}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>            
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__background c-shadow-background"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -173,8 +176,10 @@
         
             
             <pre>{
+  <span class="hljs-attr">"img-low"</span>: <span class="hljs-string">"http://localhost:3000/img/low/Venice.jpg"</span>,
+  <span class="hljs-attr">"img-sm"</span>: <span class="hljs-string">"http://localhost:3000/img/mobile/Venice.jpg"</span>,
   <span class="hljs-attr">"img"</span>: <span class="hljs-string">"http://localhost:3000/img/Venice.jpg"</span>,
-  <span class="hljs-attr">"alt"</span>: <span class="hljs-string">"VENICE"</span>
+  <span class="hljs-attr">"alt"</span>: <span class="hljs-string">"Venice"</span>
 }</pre>
             
         
@@ -223,12 +228,10 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Referenced by <em class="Meta-count">(5)</em>:</strong>
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(4)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="card.html">@<span>card</span></a>, 
-            
-                <a href="card--animated.html">@<span>card--animated</span></a>, 
             
                 <a href="card--bigger.html">@<span>card--bigger</span></a>, 
             
@@ -319,30 +322,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="card--default.html" data-pjax>
                 <span>Default</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="card--animated.html" data-pjax>
-                <span>Animated</span>
                 
 
 <div class="Status Status--unlabelled">

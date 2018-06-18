@@ -16,9 +16,10 @@ if (!('IntersectionObserver' in window)) {
 
   for (let i = 0; i < images.length; i++) { 
     let image = images[i];
-    if (image.classList.contains('js-lazy-image--handled')) {
+
+    /*if (image.classList.contains('js-lazy-image--handled')) {
       continue;
-    }
+    }*/
 
     observer.observe(image);
   }
@@ -78,7 +79,7 @@ function onIntersection(entries) {
 }
  
 function applyImage(img, src) {
-  img.classList.add('js-lazy-image--handled');
+  //img.classList.add('js-lazy-image--handled');
   img.classList.add('c-blur');
   img.src = src;  
 }

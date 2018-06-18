@@ -1,56 +1,99 @@
 .c-card {
 
     position: relative;
-    width: 285px;
-    height: 285px;
+    width: 282px;
+    height: 282px;
     color: white;
     font-family: 'Open Sans', sans-serif;
 
-    &__img {    
-        @extend %background-position;
+    &__background {    
+        position: absolute;        
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
     }
-
-    &__shadow {
-        @extend %background-position;        
-    }        
-
     &__section-main {
         position: absolute;
         top: 25%;
         left: 50%;
         transform: translateX(-50%);
-        transition: top 2s, transform 1s 1s linear;       
     }        
-
     &__message {
+        visibility: hidden;
         position: absolute;
         top: 60%;
         width: 80%;
         left: 10%;
         right: 10%;        
-    }  
-
-    &__message--anime {
-        visibility: hidden;
-        opacity: 0;
-        transition: top 2s, transform 1s 1s linear, 
-                    visibility 0s, opacity 0.5s linear;            
     }      
-    
-
+    &__message--main {
+        visibility: visible;
+    }          
     &__button {
+        visibility: hidden;
         position: absolute;
         bottom: 10%;                        
         left: 50%;
-        transform: translateX(-50%); 
-
-        @extend %fade-in;
+        transform: translateX(-50%);         
     }
 
-    @media (min-width: 600px) {        
+    @media (min-width: 365px) {        
+        &__section-main {
+            top: 35%; //
+            transition: top 1s, 
+                        transform 1s linear;                   
+        }
+        &__message {          
+            visibility: hidden;
+            opacity: 0;
+            transition: top 1s, 
+                        transform 1s 1s linear, 
+                        visibility 1s,
+                        opacity 1s linear;
+        }                            
+        &__button {
+            visibility: hidden;
+            opacity: 0; 
+            transition: visibility 0s 1s, 
+                        opacity 1s linear;            
+        }
+
+        &__section-main--anime {                    
+            transition: top 1s, 
+                        transform 1s linear;       
+        }        
+        &__section-main--animated {
+            top: 10%;          
+        }
+
+        &:hover {
+            .c-card__section-main {
+              top: 10%;
+            } 
+            .c-card__button {
+              visibility: visible;
+              opacity: 1;
+              transition: opacity 1s linear;
+            }
+            .c-card__message {
+              top: 40%;
+              visibility: visible;
+              opacity: 1;
+              transition: top 1s, transform 1s 1s linear, opacity 1s linear;
+            }
+            .c-card__background {
+              background-color: rgba(84, 84, 84, 0.8)
+            }
+        }        
+     
+    }
+
+    @media (min-width: 665px) {        
         &--bigger {
             width: 940px;
-            height: 520px;        
+            height: 529px;        
         }
         &--middle {
             width: 460px;
@@ -59,27 +102,6 @@
         &--sm {
             width: 220px;
             height: 360px;        
-        }                 
-
-        &__section-main {
-            top: 35%; //
-        }
-
-        &__button--animated {
-            visibility: visible;
-            opacity: 1;
-        }        
-        &__message--animated {
-            top: 40%;
-            visibility: visible;
-            opacity: 1;
-        }      
-
-        &__section-main--animated {
-            top: 10%;          
-        }
-        &__shadow--animated {
-            background-color: rgba(84, 84, 84, 0.8)
-        }          
+        }                         
     }
 }

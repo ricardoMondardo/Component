@@ -1,16 +1,3 @@
-.c-card__button {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear; }
-
-.c-card__img, .c-card__shadow {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1; }
-
 .c-image-background, .c-shadow-background {
   width: 100%;
   height: 100%;
@@ -18,6 +5,21 @@
 
 .c-shadow-background {
   background-color: rgba(84, 84, 84, 0.5); }
+
+.c-blur {
+  animation: blur 0.5s; }
+
+@keyframes blur {
+  0% {
+    filter: blur(40px); }
+  25% {
+    filter: blur(25px); }
+  50% {
+    filter: blur(10px); }
+  75% {
+    filter: blur(5px); }
+  100% {
+    filter: blur(0px); } }
 
 .c-logo {
   width: 135px; }
@@ -55,54 +57,76 @@
 
 .c-card {
   position: relative;
-  width: 285px;
-  height: 285px;
+  width: 282px;
+  height: 282px;
   color: white;
   font-family: 'Open Sans', sans-serif; }
+  .c-card__background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; }
   .c-card__section-main {
     position: absolute;
     top: 25%;
     left: 50%;
-    transform: translateX(-50%);
-    transition: top 2s, transform 1s 1s linear; }
+    transform: translateX(-50%); }
   .c-card__message {
+    visibility: hidden;
     position: absolute;
     top: 60%;
     width: 80%;
     left: 10%;
     right: 10%; }
-  .c-card__message--anime {
-    visibility: hidden;
-    opacity: 0;
-    transition: top 2s, transform 1s 1s linear,  visibility 0s, opacity 0.5s linear; }
+  .c-card__message--main {
+    visibility: visible; }
   .c-card__button {
+    visibility: hidden;
     position: absolute;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%); }
-  @media (min-width: 600px) {
+  @media (min-width: 365px) {
+    .c-card__section-main {
+      top: 35%;
+      transition: top 1s,  transform 1s linear; }
+    .c-card__message {
+      visibility: hidden;
+      opacity: 0;
+      transition: top 1s,  transform 1s 1s linear,  visibility 1s, opacity 1s linear; }
+    .c-card__button {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s 1s,  opacity 1s linear; }
+    .c-card__section-main--anime {
+      transition: top 1s,  transform 1s linear; }
+    .c-card__section-main--animated {
+      top: 10%; }
+    .c-card:hover .c-card__section-main {
+      top: 10%; }
+    .c-card:hover .c-card__button {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 1s linear; }
+    .c-card:hover .c-card__message {
+      top: 40%;
+      visibility: visible;
+      opacity: 1;
+      transition: top 1s, transform 1s 1s linear, opacity 1s linear; }
+    .c-card:hover .c-card__background {
+      background-color: rgba(84, 84, 84, 0.8); } }
+  @media (min-width: 665px) {
     .c-card--bigger {
       width: 940px;
-      height: 520px; }
+      height: 529px; }
     .c-card--middle {
       width: 460px;
       height: 360px; }
     .c-card--sm {
       width: 220px;
-      height: 360px; }
-    .c-card__section-main {
-      top: 35%; }
-    .c-card__button--animated {
-      visibility: visible;
-      opacity: 1; }
-    .c-card__message--animated {
-      top: 40%;
-      visibility: visible;
-      opacity: 1; }
-    .c-card__section-main--animated {
-      top: 10%; }
-    .c-card__shadow--animated {
-      background-color: rgba(84, 84, 84, 0.8); } }
+      height: 360px; } }
 
 .c-card-grid {
   display: grid;
@@ -111,20 +135,25 @@
   grid-row-gap: 20px;
   width: 860px;
   padding: 5px; }
-  @media (min-width: 600px) {
+  @media (min-width: 365px) {
+    .c-card-grid {
+      grid-template-columns: 280px 280px; }
+      .c-card-grid .c-card-grid__item {
+        display: inline; } }
+  @media (min-width: 665px) {
     .c-card-grid {
       grid-template-columns: 230px 230px 230px 230px; }
-      .c-card-grid .c-card-grid__card-one {
+      .c-card-grid .c-card-grid__item:nth-child(1) {
         grid-column: 1 / 4; }
-      .c-card-grid .c-card-grid__card-two {
+      .c-card-grid .c-card-grid__item:nth-child(2) {
         grid-column: 1 / 2; }
-      .c-card-grid .c-card-grid__card-three {
+      .c-card-grid .c-card-grid__item:nth-child(3) {
         grid-column: 3 / 3; }
-      .c-card-grid .c-card-grid__card-for {
+      .c-card-grid .c-card-grid__item:nth-child(4) {
         grid-column: 4 / 4; }
-      .c-card-grid .c-card-grid__card-five {
+      .c-card-grid .c-card-grid__item:nth-child(5) {
         grid-column: 1 / 1; }
-      .c-card-grid .c-card-grid__card-six {
+      .c-card-grid .c-card-grid__item:nth-child(6) {
         grid-column: 2 / 2; }
-      .c-card-grid .c-card-grid__card-seven {
+      .c-card-grid .c-card-grid__item:nth-child(7) {
         grid-column: 3 / 4; } }
