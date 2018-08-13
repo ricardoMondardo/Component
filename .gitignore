@@ -37,7 +37,7 @@ node_modules/
 jspm_packages/
 
 # Dist
-Dist/
+dist/
 
 # TypeScript v1 declaration files
 typings/
