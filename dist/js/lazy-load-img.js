@@ -7,8 +7,6 @@ const config = {
 let imageCount = images.length;
 let observer;
 
-console.log('window.innerWidth: ' + window.innerWidth);
-
 if (!('IntersectionObserver' in window)) {
   loadImagesImmediately(images);
 } else {
@@ -47,7 +45,6 @@ function loadImagesImmediately(images) {
   // foreach() is not supported in IE
   for (let i = 0; i < images.length; i++) { 
     let image = images[i];
-    console.log(image);
     preloadImage(image);
   }
 }

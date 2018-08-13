@@ -13,6 +13,8 @@ function showSlidesAuto() {
     var i;
     var slides = document.getElementsByClassName("c-slide-show__slide");
 
+    if(slides.length == 0) return
+
     slideIndex++;
     
     if (slideIndex > slides.length) {
@@ -27,6 +29,8 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("c-slide-show__slide");
   var dots = document.getElementsByClassName("c-slide-show__dot");
+
+  if(slides.length == 0) return
 
   if (n > slides.length) {
       slideIndex = 1
