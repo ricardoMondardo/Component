@@ -4,16 +4,16 @@
     border-radius: 7px;
 }
 
-.c-image-background {    
+.h-image-background {    
     @extend %size-backgroun;
 }
 
-.c-shadow-background {
+.h-shadow-background {
     background-color: rgba(84, 84, 84, 0.5);
     @extend %size-backgroun;         
 }
 
-.c-blur {
+.h-blur {
     animation: blur 0.5s;
 
 }

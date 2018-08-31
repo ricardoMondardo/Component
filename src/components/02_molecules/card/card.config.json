@@ -1,17 +1,13 @@
 {
     "context": {
-        "card" : {
-            "text": "lorem Est aliquip in ex magna aliquip. lorem Est aliquip in ex magna aliquip. lorem Est aliquip in ex magna aliquip",
-            "section-main": {
-                "title-up": "italy",
-                "title-down": "VENICE",
-                "logo": "http://localhost:3000/img/logo/Logo.svg"
-            },
-            "img-low": "http://localhost:3000/img/low/Venice.jpg",
-            "img-sm": "http://localhost:3000/img/mobile/Venice.jpg",
-            "img": "http://localhost:3000/img/Lagoa.jpg",                
-            "alt": "Venice"                                            
-        }
+        "text": "lorem Est aliquip in ex magna aliquip. lorem Est aliquip in ex magna aliquip. lorem Est aliquip in ex magna aliquip",
+        "title-up": "italy",
+        "title-down": "VENICE",
+        "logo": "http://localhost:3000/img/logo/Logo.svg",
+        "img-low": "http://localhost:3000/img/low/Venice.jpg",
+        "img-sm": "http://localhost:3000/img/mobile/Venice.jpg",
+        "img": "http://localhost:3000/img/Lagoa.jpg",                
+        "alt": "Venice"                                            
     }
 }
 

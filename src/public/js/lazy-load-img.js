@@ -77,6 +77,6 @@ function onIntersection(entries) {
  
 function applyImage(img, src) {
   //img.classList.add('js-lazy-image--handled');
-  img.classList.add('c-blur');
+  img.classList.add('h-blur');
   img.src = src;  
 }
