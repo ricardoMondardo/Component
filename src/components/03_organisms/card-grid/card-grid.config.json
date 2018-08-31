@@ -2,8 +2,8 @@
     "context": {
         "card-one": {
             "text": "lorem Est aliquip in ex magna aliquip. lorem Est aliquip in ex magna aliquip. lorem.",
-            "title-up": "front-end",
-            "title-down": "Developer",
+            "title-up": "Title",
+            "title-down": "SubTitle",
             "img-low": "http://localhost:3000/img/low/Lagoa.jpg",
             "img-sm": "http://localhost:3000/img/mobile/Lagoa.jpg",
             "img": "http://localhost:3000/img/Lagoa.jpg",

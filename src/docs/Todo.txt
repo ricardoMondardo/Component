@@ -1,0 +1,2 @@
+- Include Place holder on the images cards
+- Update components with place holder show Image Size
