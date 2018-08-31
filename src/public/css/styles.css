@@ -47,14 +47,6 @@
   color: white;
   background-color: transparent; }
 
-.c-section-main {
-  width: 200px;
-  height: 85px;
-  line-height: 40px; }
-  .c-section-main__logo {
-    width: 135px;
-    padding-left: 37px; }
-
 .c-card {
   position: relative;
   width: 282px;
@@ -127,6 +119,14 @@
     .c-card--sm {
       width: 220px;
       height: 360px; } }
+
+.c-section-main {
+  width: 200px;
+  height: 85px;
+  line-height: 40px; }
+  .c-section-main__logo {
+    width: 135px;
+    padding-left: 37px; }
 
 .c-card-grid {
   position: absolute;

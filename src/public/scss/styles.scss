@@ -1,9 +1,9 @@
-@import 'helper';
-@import 'typography';
+@import '01_atoms/helper';
+@import '01_atoms/typography';
+@import '01_atoms/button';
 
-@import 'button';
-@import 'section-main';
+@import '02_molecules/card';
 
-@import 'card';
-@import 'card-grid'; 
-@import '_slide-show';
+@import '03_organisms/section-main';
+@import '03_organisms/card-grid'; 
+@import '03_organisms/slide-show';

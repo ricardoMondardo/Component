@@ -1,0 +1,10 @@
+{
+    "context": {
+        "slide" : {
+            "img1": "http://localhost:3000/img/slide-show/1-slide.jpeg",
+            "img2": "http://localhost:3000/img/slide-show/2-slide.jpeg",
+            "img3": "http://localhost:3000/img/slide-show/3-slide.jpeg"
+        }
+    }
+}
+
