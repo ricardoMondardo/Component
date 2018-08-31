@@ -6,3 +6,21 @@
     color: white;
     background-color: transparent;
 }
+
+.c-button-fancy {
+    border: .1em solid var(--color);
+    background: transparent;
+    --color: black;
+    color: var(--color);
+    transition: 1s box-shadow;
+
+    &:hover {
+        box-shadow: 0 0 0 1em var(--color) inset;
+        color: white;
+    }    
+
+    &--blue {
+        --color: blue
+    }
+
+}

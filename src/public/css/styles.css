@@ -47,6 +47,19 @@
   color: white;
   background-color: transparent; }
 
+.c-button-fancy {
+  border: 0.1em solid var(--color);
+  background: transparent;
+  --color: black;
+  color: var(--color);
+  transition: 1s box-shadow; }
+  .c-button-fancy:hover {
+    box-shadow: 0 0 0 1em var(--color) inset;
+    color: white; }
+  .c-button-fancy--blue {
+    --color: blue
+    ; }
+
 .c-card {
   position: relative;
   width: 282px;
