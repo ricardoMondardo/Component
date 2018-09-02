@@ -75,9 +75,10 @@
     position: absolute;
     left: 30px;
     top: 120px;
-    width: 210px;
-    height: 120px;
-    border-bottom: solid 180px currentColor;
+    width: calc(var(--size) * 1px);
+    height: calc((var(--size) - 90) * 1px);
+    --size: 210;
+    border-bottom: solid calc((var(--size) - 30) * 1px) currentColor;
     border-radius: 0 0 0 100%;
     transform: rotate(-40deg);
     transform-origin: right 210px; }
