@@ -1,0 +1,51 @@
+.c-moustache {
+    width: calc(var(--size) * 1px);
+    height: calc(var(--size) * 1px);
+    --size: 180;
+
+    left: 100px;
+
+    border-radius: 50%;
+    position: absolute;
+    color: black;
+
+    --y-shadow: 240;
+
+    box-shadow: 
+        150px calc(var(--y-shadow) * 1px) 0 0 currentColor,
+        calc( (var(--size) + 120) * 1px) calc(var(--y-shadow) * 1px) 0 0 currentColor;        
+
+    &::before {
+        content: "";
+        position: absolute;
+
+        left: 30px;
+        top: 120px;
+
+        width: 210px;
+        height: 120px;
+
+        border-bottom:  solid 180px currentColor;
+        border-radius: 0 0 0 100%;
+
+        transform: rotate(-40deg); //move moustache here
+        transform-origin: right 210px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+
+        left: 390px;
+        top: 120px;
+
+        width: 210px;
+        height: 120px;
+
+        border-bottom:  solid 180px currentColor;
+        border-radius: 0 0 100% 0;
+
+        transform: rotate(40deg); //move moustache here
+        transform-origin: left 210px;
+    }    
+}
