@@ -2,13 +2,9 @@
 @import '01_atoms/typography';
 @import '01_atoms/button';
 @import '01_atoms/moustache';
+@import '01_atoms/preview';
 
 @import '02_molecules/card';
 @import '02_molecules/slide-show';
 
-@import '03_organisms/card-grid'; 
-
-
-body {
-    background-color: #6f978a
-}
+@import '03_organisms/card-grid';

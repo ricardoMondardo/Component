@@ -1,11 +1,19 @@
-.c-button{
+.c-button {
     width: 130px;
     height: 40px;
     border-radius: 5px;
-    border: solid 1px white;
-    color: white;
+    border: solid 1px var(--color);
+    color: var(--color);
     background-color: transparent;
+    --color: black;
+
+    &--white {
+        border: solid 1px white;
+        color: white
+    }    
 }
+
+
 
 .c-button-fancy {
     border: .1em solid var(--color);

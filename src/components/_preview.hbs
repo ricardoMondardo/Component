@@ -4,12 +4,11 @@
     <meta charset="utf-8">    
     <title>Preview Layout</title>
     <link rel="stylesheet" href="{{ path '/css/styles.css'}}">    
-    <!--
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    !-->
 </head>
 <body>
-{{{ yield }}}
-<script src="{{ path '/js/lazy-load-img.js' }}"></script>
+    <div class="preview-wrapp">
+        {{{ yield }}}
+    </div>    
+    <script src="{{ path '/js/lazy-load-img.js' }}"></script>
 </body>
 </html>
