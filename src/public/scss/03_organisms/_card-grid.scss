@@ -9,17 +9,10 @@
     
     @media (min-width: 615px) {
         grid-template-columns: 1fr 1fr;
-        max-width: 965px;                  
     }        
 
     @media (min-width: 960px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width: 965px;              
-    }            
-    
-    @media (min-width: 1125px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        max-width: 1000px;              
-    }    
+        grid-template-columns: 1fr 1fr 1fr;       
+    }   
     
 }

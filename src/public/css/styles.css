@@ -250,13 +250,7 @@
     padding-bottom: 0.3em; }
   @media (min-width: 615px) {
     .c-card-grid {
-      grid-template-columns: 1fr 1fr;
-      max-width: 965px; } }
+      grid-template-columns: 1fr 1fr; } }
   @media (min-width: 960px) {
     .c-card-grid {
-      grid-template-columns: 1fr 1fr 1fr;
-      max-width: 965px; } }
-  @media (min-width: 1125px) {
-    .c-card-grid {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      max-width: 1000px; } }
+      grid-template-columns: 1fr 1fr 1fr; } }
