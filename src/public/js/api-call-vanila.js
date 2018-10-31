@@ -21,10 +21,14 @@ var callAPi = function(){
     
     Http.onreadystatechange = function() {
 
-        if(this.readyState = DONE && this.status == 200) {
-            updateUI(Http.responseText);
-        }
-        
+        if(this.readyState = DONE) {
+            if (this.status == 200)
+            {
+                updateUI(Http.responseText);
+            } else {
+                showErrorCode(Http.status);
+            }            
+        }        
     };
 }
 
