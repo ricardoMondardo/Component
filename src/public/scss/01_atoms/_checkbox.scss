@@ -22,23 +22,42 @@
   }
   
   /* Create a custom checkbox */
-  .checkmark {
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+    height: var(--size);
+    width: var(--size);
+    background-color: white;    
+    border: 1px solid #727779; /*The Box*/
+    border-radius: 2px;
+    --size: 20px;
   }
-  
-  /* On mouse-over, add a grey background color */
+
+  /* On mouse-over, change border color */
   .c-checkbox:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
+    /*background-color: #ccc;*/
+    border: 1px solid #2F2F2F;
+  }  
+
+/* Style the checkmark/indicator */
+/* Just a rotated squace */
+.c-checkbox .checkmark:after {
+    left: 7px;
+    top: 1.5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2.5px 2.5px 0;
+    border-radius: 1.5px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
   
   /* When the checkbox is checked, add a blue background */
   .c-checkbox input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #2F2F2F;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -53,15 +72,3 @@
     display: block;
   }
   
-  /* Style the checkmark/indicator */
-  .c-checkbox .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
