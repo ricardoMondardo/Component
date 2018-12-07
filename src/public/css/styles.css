@@ -101,7 +101,7 @@
 .preview-wrapp {
   display: flex;
   justify-content: center;
-  padding: 0.5%; }
+  padding: 0 2.5% 0 2.5%; }
 
 .c-button {
   width: 130px;
@@ -346,3 +346,30 @@
   @media (min-width: 960px) {
     .c-card-grid {
       grid-template-columns: 1fr 1fr 1fr; } }
+
+.c-footer {
+  width: 100%;
+  font-size: 25px; }
+  .c-footer .c-footer--menu {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-inline-start: 0;
+    /*To do: Remove with normalize*/ }
+    .c-footer .c-footer--menu li {
+      width: 33%;
+      border: 1px solid green;
+      padding: 5px; }
+    .c-footer .c-footer--menu a {
+      display: block;
+      text-decoration: none; }

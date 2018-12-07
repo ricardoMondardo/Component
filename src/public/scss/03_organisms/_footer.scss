@@ -1,0 +1,43 @@
+.c-footer {
+    width: 100%;
+    font-size: 25px;
+        
+    .c-footer--menu {
+        list-style-type: none;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;        
+        display: flex;                
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
+        border: 1px solid black;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        padding-inline-start: 0; /*To do: Remove with normalize*/     
+        
+        & li {   
+            width: 33%;
+            border: 1px solid green;
+            padding: 5px;
+        }
+    
+        & a {
+            display: block;
+            text-decoration: none;
+        
+            // &:focus,
+            // &:hover,
+            // &:active {
+                
+            // }
+        }
+    
+        @media screen and (min-width: 768px) {
+        }
+    }
+
+}
