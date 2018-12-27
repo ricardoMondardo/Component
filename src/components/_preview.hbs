@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="{{ path '/css/styles.css'}}">    
 </head>
 <body>
-    <div class="preview-wrapp">
-        {{{ yield }}}
+    <div class="preview-wrapper">
+        <div class="content-wrapper">
+            {{{ yield }}}
+        </div>        
     </div>    
     <script src="{{ path '/js/lazy-load-img.js' }}"></script>
 </body>

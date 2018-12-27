@@ -6,7 +6,7 @@
         "logo": "http://localhost:3000/img/logo/Logo.svg",
         "img-low": "http://localhost:3000/img/low/Venice.jpg",
         "img-sm": "http://localhost:3000/img/mobile/Venice.jpg",
-        "img": "http://localhost:3000/img/Lagoa.jpg",                
+        "img": "https://via.placeholder.com/1280x720?text=PlaceHolder+Img+1280+720",                
         "alt": "Venice"                                            
     }
 }

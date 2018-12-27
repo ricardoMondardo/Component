@@ -1,0 +1,29 @@
+.c-card-grid-flex-wrapper {
+
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    .c-card-grid-flex {
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        max-width: 1280px;        
+    
+        &__item {
+            padding: 0.3em;
+        }  
+    
+        @media (min-width: 960px) {
+            color: red;      
+    
+            &__item--hero {
+                flex: 1 1 100%;
+            }
+    
+        }   
+        
+    }
+}
+
