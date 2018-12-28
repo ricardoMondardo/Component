@@ -1,50 +1,29 @@
 <div class="c-card-grid-flex-wrapper">
     <div class="c-card-grid-flex">
 
-        <div class="c-card-grid-flex__item c-card-grid-flex__item--hero">                                
-            <div class="c-card c-card--hero">        
-                <img class="c-card__background h-image-background js-lazy-image" 
-                    srcset="{{card-one.img}} 282w, {{card-one.img}} 300w, {{card-one.img}} 1280w"    
-                    data-src="{{card-one.img}}" 
-                    alt="{{card-one.alt}}">            
-
-                <div class="c-card__background h-shadow-background"></div>
-
-                <div class="c-card__section-main">
-                    <div class="c-section-main">
-                        <div class="c-section-main__up c-title">{{card-one.title-up}}</div>        
-                        <div class="c-section-main__down c-title c-title--big">{{card-one.title-down}}</div>
-                    </div>
-                </div>        
-
-                <div class="c-card__message c-card__message--main c-message">{{card-one.text}}</div>                                     
-                <div class="c-card__button">{{render "@button-white"}}</div>                                         
-            </div>
-        </div>
+        <div class="c-card-grid-flex__item">
+            <div class="c-card c-card--hero">
+                {{render "@card" card}}
+            </div>        
+        </div>  
         
-        <div class="c-card-grid-flex__item">        
-            {{render "@card" card-two}}
+        <div class="c-card-grid-flex__item">
+            <div class="c-card c-card--md">
+                {{render "@card" card}}
+            </div>        
+        </div>   
+
+        <div class="c-card-grid-flex__item">
+            <div class="c-card">
+                {{render "@card" card}}
+            </div>        
         </div>        
 
-        <div class="c-card-grid-flex__item">        
-            {{render "@card" card-three}}
-        </div>        
-
-        <div class="c-card-grid-flex__item">        
-            {{render "@card" card-for}}
-        </div>                    
-
-        <div class="c-card-grid-flex__item">        
-            {{render "@card" card-five}}
-        </div>                    
-
-        <div class="c-card-grid-flex__item">        
-            {{render "@card" card-six}}
-        </div>                    
-
-        <div class="c-card-grid-flex__item">        
-            {{render "@card" card-sevem}}
-        </div>                                
+        <div class="c-card-grid-flex__item">
+            <div class="c-card">
+                {{render "@card" card}}
+            </div>        
+        </div>                                                  
 
     </div>
 </div>

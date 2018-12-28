@@ -4,9 +4,9 @@
         "title-up": "italy",
         "title-down": "VENICE",
         "logo": "http://localhost:3000/img/logo/Logo.svg",
-        "img-low": "http://localhost:3000/img/low/Venice.jpg",
-        "img-sm": "http://localhost:3000/img/mobile/Venice.jpg",
-        "img": "https://via.placeholder.com/1280x720?text=PlaceHolder+Img+1280+720",                
+        "img-xl": "https://via.placeholder.com/1280x720?text=PlaceHolder+Img+1280+720",
+        "img-md": "https://via.placeholder.com/624x351?text=PlaceHolder+Img+624+351",
+        "img": "https://via.placeholder.com/282x282?text=PlaceHolder+Img+285+282",               
         "alt": "Venice"                                            
     }
 }

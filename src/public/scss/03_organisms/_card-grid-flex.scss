@@ -1,26 +1,33 @@
+$maxWidthContainer: 1280px;
+$gap: 5px;
+
 .c-card-grid-flex-wrapper {
 
-    display: inline-block;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    left: 10%;
 
     .c-card-grid-flex {
 
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
-        max-width: 1280px;        
+        justify-content: space-between;
+        width: $maxWidthContainer;        
     
         &__item {
-            padding: 0.3em;
+            padding-bottom: $gap;
+            order: 2;
         }  
     
         @media (min-width: 960px) {
             color: red;      
-    
-            &__item--hero {
+            
+            &__item:nth-child(1) {
                 flex: 1 1 100%;
             }
+
+            &__item:nth-child(2) {
+                flex: 0 1 ( ($maxWidthContainer / 2) - ($gap * 3));
+            }              
     
         }   
         
