@@ -40,18 +40,18 @@
         transform: translateX(-50%);         
     }
 
-    @media (min-width: 615px) {
-        
+    @media (min-width: $DestopSize) {                     
 
-        &--hero {
-            width: 1280px;
-            height: 591px;
+
+        &--xl {
+            width: 620px;
+            height: 620px;
         }
 
         &--md {
-            width: 624px;
-            height: 310px;
-        }                
+            width: 410px;
+            height: 410px;            
+        }        
 
         &__section-main {
             top: 35%; //

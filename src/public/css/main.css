@@ -21,9 +21,6 @@
   100% {
     filter: blur(0px); } }
 
-.c-logo {
-  width: 135px; }
-
 .c-title {
   text-align: center;
   font-size: 13.5px;
@@ -222,13 +219,13 @@
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%); }
-  @media (min-width: 615px) {
-    .c-card--hero {
-      width: 1280px;
-      height: 591px; }
+  @media (min-width: 768px) {
+    .c-card--xl {
+      width: 620px;
+      height: 620px; }
     .c-card--md {
-      width: 624px;
-      height: 310px; }
+      width: 410px;
+      height: 410px; }
     .c-card__section-main {
       top: 35%;
       transition: top 1s,  transform 1s linear; }
@@ -335,42 +332,29 @@
     opacity: 1; } }
 
 .preview-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%; }
 
 .content-wrapper {
-  margin: 0px 160px; }
+  border: 1px solid gold;
+  margin: 0px 16px; }
+  @media (min-width: 768px) {
+    .content-wrapper {
+      margin: 0px 160px; } }
 
-.c-card-grid {
-  display: grid;
-  grid-gap: 0.8em; }
-  .c-card-grid__item {
-    padding-bottom: 0.3em; }
-  @media (min-width: 615px) {
-    .c-card-grid {
-      grid-template-columns: 1fr 1fr; } }
-  @media (min-width: 960px) {
-    .c-card-grid {
-      grid-template-columns: 1fr 1fr 1fr; } }
-
-.c-card-grid-flex-wrapper {
-  position: relative;
-  left: 10%; }
-  .c-card-grid-flex-wrapper .c-card-grid-flex {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 1280px; }
-    .c-card-grid-flex-wrapper .c-card-grid-flex__item {
-      padding-bottom: 5px;
-      order: 2; }
-    @media (min-width: 960px) {
-      .c-card-grid-flex-wrapper .c-card-grid-flex {
-        color: red; }
-        .c-card-grid-flex-wrapper .c-card-grid-flex__item:nth-child(1) {
-          flex: 1 1 100%; }
-        .c-card-grid-flex-wrapper .c-card-grid-flex__item:nth-child(2) {
-          flex: 0 1 625px; } }
+.c-card-grid-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .c-card-grid-flex__item {
+    padding: 5px; }
+  @media (min-width: 768px) {
+    .c-card-grid-flex {
+      flex-flow: row wrap;
+      justify-content: space-between; } }
 
 .c-footer {
   width: 100%;

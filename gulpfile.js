@@ -19,7 +19,7 @@ fractal.web.set('server.port', 3000);
 const logger = fractal.cli.console;
 
 gulp.task('sass', () => {
-    return gulp.src( `${__dirname}/src/public/scss/styles.scss`)
+    return gulp.src( `${__dirname}/src/public/scss/main.scss`)
     .pipe(sass())
     .pipe(gulp.dest(`${__dirname}/src/public/css`))
 });

@@ -1,8 +1,17 @@
 .preview-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%;    
 }
 
 .content-wrapper {
-    margin: 0px 160px;    
+
+    border: 1px solid gold;
+    margin: 0px 16px; 
+
+    @media (min-width: $DestopSize) {
+        margin: 0px 160px;
+    }                
 }
