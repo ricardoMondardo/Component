@@ -1,12 +1,9 @@
 .c-nav {
         
-    background: #1ABC9C;
-    width: 100%;
     height: $headerSize;
 
     &__menu-icon {
-        width: 200px;
-        padding: 8px 10px;
+        padding: 0px 10px;
         float: right;
         text-align: right;
     }
@@ -14,9 +11,7 @@
     &__menu {
         position: relative;
         float: right;
-        margin: 0px 8px;
-        
-        width: 200px;
+        margin: 0px 8px;        
         padding: 10px;
         
         color: #999;
@@ -28,16 +23,15 @@
         opacity: 0;
         transition: opacity .4s;
 
-
         &:after {
-            position: absolute;
-            top: -15px;
-            left: 186px;
+            position: relative;
+            top: -164px;
+            left: 29px;
             content: "";
             display: block;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 20px solid white;
+            border-left: 4px solid transparent;
+            border-right: 19px solid transparent;
+            border-bottom: 10px solid white;
         }
         
         ul, li, li a {
@@ -65,7 +59,7 @@
         opacity: 1;
     }
     
-    @media (min-width: $DestopSize) {
+    @media (min-width: $DesktopSize) {
 
         height: $headerSizeDesktop;
 
@@ -75,7 +69,7 @@
     
         &__menu {
             position: fixed;
-            top: 0px;
+            top: 2px;
             right: $gapPreviewDesktop + 10px;
             width: initial;
             padding: 0;
@@ -94,7 +88,7 @@
                 display: inline-block;
                 margin: 0;
                 padding: 0;
-                line-height: 65px;
+                line-height: 55px;
             }
     
             li a {

@@ -1,0 +1,23 @@
+.c-header {
+
+    background: #1ABC9C;
+    height: $headerSize;
+    padding: 10px;
+    
+    &__logo {
+        float: left;
+    }
+
+    &__nav {
+        float: right;
+    }
+
+    @media (min-width: $DesktopSize) {
+        height: $headerSizeDesktop;    
+
+        &__logo {
+            padding-top: 8px;
+        }        
+    }
+
+}

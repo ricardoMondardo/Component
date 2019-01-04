@@ -13,7 +13,7 @@
     margin: 0px $gapPreview;
     background: #eee; 
 
-    @media (min-width: $DestopSize) {
+    @media (min-width: $TabletsSize) {
         margin: 0px $gapPreviewDesktop;
     }                
 }
