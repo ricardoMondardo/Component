@@ -404,7 +404,7 @@
       .c-nav__menu {
         position: fixed;
         top: 2px;
-        right: 170px;
+        right: 70px;
         width: initial;
         padding: 0;
         opacity: 1;
@@ -433,14 +433,17 @@
 
 .content-wrapper {
   height: 100%;
+  background: #eee;
   margin: 0px 16px;
-  background: #eee; }
+  padding: 70px 20px; }
   @media (min-width: 600px) {
     .content-wrapper {
-      margin: 0px 60px; } }
+      margin: 0px 30px;
+      padding: 65px 10px; } }
   @media (min-width: 940px) {
     .content-wrapper {
-      margin: 0px 160px; } }
+      margin: 0px 60px;
+      padding: 80px 10px; } }
 
 .c-card-grid-flex {
   display: flex;
@@ -473,7 +476,7 @@
       text-decoration: none; }
     @media (min-width: 940px) {
       .c-footer__links {
-        padding-right: 170px;
+        padding-right: 70px;
         float: right; } }
 
 .c-header {
