@@ -379,7 +379,7 @@
       display: block;
       border-left: 4px solid transparent;
       border-right: 19px solid transparent;
-      border-bottom: 10px solid white; }
+      border-bottom: 8px solid white; }
     .c-nav__menu ul, .c-nav__menu li, .c-nav__menu li a {
       list-style: none;
       display: block;
@@ -445,6 +445,9 @@
   background: #eee; }
   @media (min-width: 600px) {
     .content-wrapper {
+      margin: 0px 60px; } }
+  @media (min-width: 940px) {
+    .content-wrapper {
       margin: 0px 160px; } }
 
 .c-card-grid-flex {
@@ -463,11 +466,6 @@
   font-size: 25px; }
   .c-footer .c-footer--menu {
     list-style-type: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -498,3 +496,7 @@
       height: 50px; }
       .c-header__logo {
         padding-top: 8px; } }
+
+body {
+  min-width: 382px;
+  margin: 0; }
