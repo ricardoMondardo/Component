@@ -5,6 +5,7 @@
             "img2": "http://localhost:3000/img/slide-show/2-slide.jpeg",
             "img3": "http://localhost:3000/img/slide-show/3-slide.jpeg"
         }
-    }
+    },
+    "status": "wip"
 }
 

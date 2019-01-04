@@ -9,6 +9,8 @@
             "img": "https://via.placeholder.com/1280x720?text=PlaceHolder+Img",  
             "alt": "Lagoa"                                    
         }        
-    }
+    },
+    "notes": "These are some **notes** about the component",
+    "status": "wip"
 }
 
