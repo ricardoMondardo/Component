@@ -186,6 +186,27 @@
 .c-checkbox input:checked ~ .checkmark:after {
   display: block; }
 
+.c-button-menu-hamburger {
+  display: inline-block;
+  cursor: pointer; }
+  .c-button-menu-hamburger__bar1, .c-button-menu-hamburger__bar2, .c-button-menu-hamburger__bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s; }
+
+.on .c-button-menu-hamburger__bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px); }
+
+.on .c-button-menu-hamburger__bar2 {
+  opacity: 0; }
+
+.on .c-button-menu-hamburger__bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px); }
+
 .c-card {
   position: relative;
   width: 310px;
@@ -331,6 +352,10 @@
   to {
     opacity: 1; } }
 
+.c-nav .c-nav__menu {
+  color: white;
+  opacity: 0; }
+
 .preview-wrapper {
   position: absolute;
   top: 0;
@@ -339,7 +364,9 @@
   height: 100%; }
 
 .content-wrapper {
-  border: 1px solid gold;
+  border-right: 1px solid gold;
+  border-left: 1px solid gold;
+  height: 100%;
   margin: 0px 16px; }
   @media (min-width: 768px) {
     .content-wrapper {
