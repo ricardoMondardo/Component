@@ -10,10 +10,10 @@
 .content-wrapper {
     
     height: 100%;
-    margin: 0px 16px;
+    margin: 0px $gapPreview;
     background: #eee; 
 
     @media (min-width: $DestopSize) {
-        margin: 0px 160px;
+        margin: 0px $gapPreviewDesktop;
     }                
 }

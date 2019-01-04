@@ -354,20 +354,20 @@
 
 .c-nav {
   background: #1ABC9C;
-  padding-bottom: 2em;
   width: 100%;
-  height: 26px; }
+  height: 56px; }
   .c-nav__menu-icon {
     width: 200px;
-    padding: 10px;
-    margin: auto;
-    text-align: center; }
+    padding: 8px 10px;
+    float: right;
+    text-align: right; }
   .c-nav__menu {
     position: relative;
-    color: #999;
+    float: right;
+    margin: 0px 8px;
     width: 200px;
     padding: 10px;
-    margin: auto;
+    color: #999;
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
     text-align: center;
     border-radius: 4px;
@@ -378,7 +378,7 @@
     .c-nav__menu:after {
       position: absolute;
       top: -15px;
-      left: 95px;
+      left: 186px;
       content: "";
       display: block;
       border-left: 15px solid transparent;
@@ -400,6 +400,40 @@
       color: #fff; }
   .c-nav__menu--on {
     opacity: 1; }
+  @media (min-width: 768px) {
+    .c-nav {
+      height: 75px; }
+      .c-nav__menu-icon {
+        opacity: 0; }
+      .c-nav__menu {
+        position: fixed;
+        top: 0px;
+        right: 170px;
+        width: initial;
+        padding: 0;
+        opacity: 1;
+        background: unset;
+        box-shadow: unset; }
+        .c-nav__menu:after {
+          opacity: 0; }
+        .c-nav__menu ul, .c-nav__menu li, .c-nav__menu li a {
+          list-style: none;
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          line-height: 65px; }
+        .c-nav__menu li a {
+          padding: 5px 15px;
+          color: white;
+          text-decoration: none;
+          transition: all .2s; }
+        .c-nav__menu li a:hover,
+        .c-nav__menu li a:focus {
+          background: #1ABC9C;
+          color: #fff;
+          font-weight: 600;
+          letter-spacing: 1.5px;
+          font-size: 20px; } }
 
 .preview-wrapper {
   position: absolute;

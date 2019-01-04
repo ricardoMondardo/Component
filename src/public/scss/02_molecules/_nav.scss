@@ -1,23 +1,25 @@
 .c-nav {
         
     background: #1ABC9C;
-    padding-bottom: 2em;
     width: 100%;
-    height: 26px;
+    height: $headerSize;
 
     &__menu-icon {
         width: 200px;
-        padding: 10px;
-        margin: auto;
-        text-align: center;
+        padding: 8px 10px;
+        float: right;
+        text-align: right;
     }
 
     &__menu {
         position: relative;
-        color: #999;
+        float: right;
+        margin: 0px 8px;
+        
         width: 200px;
         padding: 10px;
-        margin: auto;
+        
+        color: #999;
         font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
         text-align: center;
         border-radius: 4px;
@@ -30,14 +32,13 @@
         &:after {
             position: absolute;
             top: -15px;
-            left: 95px;
+            left: 186px;
             content: "";
             display: block;
             border-left: 15px solid transparent;
             border-right: 15px solid transparent;
             border-bottom: 20px solid white;
         }
-
         
         ul, li, li a {
             list-style: none;
@@ -62,6 +63,57 @@
 
     &__menu--on {
         opacity: 1;
-    }    
+    }
+    
+    @media (min-width: $DestopSize) {
+
+        height: $headerSizeDesktop;
+
+        &__menu-icon {
+            opacity: 0;
+        }
+    
+        &__menu {
+            position: fixed;
+            top: 0px;
+            right: $gapPreviewDesktop + 10px;
+            width: initial;
+            padding: 0;
+            opacity: 1;
+            
+            background: unset;
+            box-shadow: unset;
+    
+            &:after {
+                opacity: 0;
+            }
+    
+            
+            ul, li, li a {
+                list-style: none;
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                line-height: 65px;
+            }
+    
+            li a {
+                padding: 5px 15px;
+                color: white;
+                text-decoration: none;
+                transition: all .2s;                
+            }
+    
+            li a:hover,
+            li a:focus {
+                background: #1ABC9C;
+                color: #fff;
+                font-weight: 600;   
+                letter-spacing: 1.5px;       
+                font-size: 20px;      
+            }        
+        }
+    
+    }
 
 }
