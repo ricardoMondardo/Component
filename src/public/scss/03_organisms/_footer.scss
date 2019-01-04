@@ -1,30 +1,36 @@
 .c-footer {
-    
-    width: 100%;
-    font-size: 25px;
-        
-    .c-footer--menu {
-        list-style-type: none; 
-        display: flex;                
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
 
-        border: 1px solid black;
-        margin-left: 50%;
-        transform: translateX(-50%);
-        padding-inline-start: 0; /*To do: Remove with normalize*/     
+    position: fixed;
+    bottom: 0;
+
+    font-family: $fontMaster;
+    background: #1ABC9C;   
+    width: 100%; 
+
+    &__logo {
+        padding: 10px 15px;
+        float: left;
+    }
         
-        & li {   
-            width: 33%;
-            border: 1px solid green;
+    &__links {     
+        
+        float: unset;
+
+        li {   
+            display: inline;
+            list-style: none;
             padding: 5px;
         }
     
-        & a {
-            display: block;
+        a {
+            color: white;
             text-decoration: none;    
         }
-    }
+
+        @media (min-width: $DesktopSize) {
+            padding-right: $gapPreviewDesktop + 10px;
+            float: right;
+        }        
+    } 
 
 }

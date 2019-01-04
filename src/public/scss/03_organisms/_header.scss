@@ -1,10 +1,15 @@
 .c-header {
 
+    position: fixed;
+    top: 0;    
+    height: $headerFooterSize;
+    padding: 10px 0px;
+    width: 100%;
+    
     background: #1ABC9C;
-    height: $headerSize;
-    padding: 10px;
     
     &__logo {
+        padding: 0px 15px;
         float: left;
     }
 
@@ -13,7 +18,8 @@
     }
 
     @media (min-width: $DesktopSize) {
-        height: $headerSizeDesktop;    
+
+        height: $headerFooterSizeDesktop;    
 
         &__logo {
             padding-top: 8px;
