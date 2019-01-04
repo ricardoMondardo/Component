@@ -1,8 +1,68 @@
 .c-nav {
 
-    .c-nav__menu {
-        color: white;
-        opacity: 0;        
+    background: #eee;    
+    padding-bottom: 2em;
+    width: 300px;
+
+    &__menu-icon {
+        width: 200px;
+        padding: 10px;
+        margin: auto;
+        text-align: center;
     }
+
+    &__menu {
+        position: relative;
+        color: #999;
+        width: 200px;
+        padding: 10px;
+        margin: auto;
+        font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+        text-align: center;
+        border-radius: 4px;
+        background: white;
+        box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+        
+        opacity: 0;
+        //visibility: hidden;
+        transition: opacity .4s;
+
+
+        &:after {
+            position: absolute;
+            top: -15px;
+            left: 95px;
+            content: "";
+            display: block;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 20px solid white;
+        }
+
+        
+        ul, li, li a {
+            list-style: none;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        li a {
+            padding: 5px;
+            color: #888;
+            text-decoration: none;
+            transition: all .2s;
+        }
+
+        li a:hover,
+        li a:focus {
+            background: #1ABC9C;
+            color: #fff;
+        }        
+    }
+
+    &__menu--on {
+        opacity: 1;
+    }    
 
 }

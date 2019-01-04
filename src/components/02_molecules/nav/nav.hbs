@@ -1,11 +1,16 @@
 <nav id="id-toggle" class="c-nav">
 
-    {{ render "@button-menu-hamburger" }}
+    <div class="c-nav__menu-icon">
+        {{ render "@button-menu-hamburger" }}
+    </div>
+    
 
-    <ul id='id-toggle-menu' 
-        class='c-nav__menu'>
-        <li><a href="#">Menu 1</a></li>
-        <li><a href="#">Menu 2</a></li>
-        <li><a href="#">Menu 3</a></li>
-    </ul>
+    <div id='id-toggle-menu' class='c-nav__menu'>
+        <ul>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+    </div>
+    
 </nav>

@@ -352,9 +352,53 @@
   to {
     opacity: 1; } }
 
-.c-nav .c-nav__menu {
-  color: white;
-  opacity: 0; }
+.c-nav {
+  background: #eee;
+  padding-bottom: 2em;
+  width: 300px; }
+  .c-nav__menu-icon {
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    text-align: center; }
+  .c-nav__menu {
+    position: relative;
+    color: #999;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transition: opacity .4s; }
+    .c-nav__menu:after {
+      position: absolute;
+      top: -15px;
+      left: 95px;
+      content: "";
+      display: block;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 20px solid white; }
+    .c-nav__menu ul, .c-nav__menu li, .c-nav__menu li a {
+      list-style: none;
+      display: block;
+      margin: 0;
+      padding: 0; }
+    .c-nav__menu li a {
+      padding: 5px;
+      color: #888;
+      text-decoration: none;
+      transition: all .2s; }
+    .c-nav__menu li a:hover,
+    .c-nav__menu li a:focus {
+      background: #1ABC9C;
+      color: #fff; }
+  .c-nav__menu--on {
+    opacity: 1; }
 
 .preview-wrapper {
   position: absolute;
