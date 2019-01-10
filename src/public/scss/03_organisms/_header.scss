@@ -2,11 +2,11 @@
 
     position: fixed;
     top: 0;    
-    height: $headerFooterSize;
+    height: $headerHeight;
     padding: 10px 0px;
-    width: 100%;
-    
-    background: #1ABC9C;
+    width: 100%;    
+
+    background: $primeryColor;
     
     &__logo {
         padding: 0px 15px;
@@ -15,11 +15,12 @@
 
     &__nav {
         float: right;
+        width: 50%;
     }
 
-    @media (min-width: $DesktopSize) {
+    @media (min-width: $SizeDesktop) {
 
-        height: $headerFooterSizeDesktop;    
+        height: $headerHeightDesktop;    
 
         &__logo {
             padding-top: 8px;

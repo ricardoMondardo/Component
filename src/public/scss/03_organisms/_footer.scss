@@ -2,11 +2,13 @@
 
     position: fixed;
     bottom: 0;
+    height: $FooterHeight;
+    padding: 10px 0px;
+    width: 100%;
 
     font-family: $fontMaster;
-    background: #1ABC9C;   
-    width: 100%; 
-
+    background: $primeryColor;   
+    
     &__logo {
         padding: 10px 15px;
         float: left;
@@ -25,12 +27,20 @@
         a {
             color: white;
             text-decoration: none;    
-        }
+        }        
 
-        @media (min-width: $DesktopSize) {
-            padding-right: $gapPreviewDesktop + 10px;
+        @media (min-width: $SizeDesktop) {
+            padding-right: $gapSidesPreviewDesktop + 10px;
             float: right;
         }        
     } 
+
+    @media (min-width: $SizeTablets) {
+        height: $FooterHeightTablet;
+    }     
+    
+    @media (min-width: $SizeDesktop) {
+        height: $FooterHeightDesktop;
+    }         
 
 }

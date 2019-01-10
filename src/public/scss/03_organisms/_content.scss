@@ -1,0 +1,20 @@
+.content-wrapper {
+        
+    position: fixed;    
+    height: 100%;
+    width: 100%;
+    top: $headerHeight + 20px;
+    z-index: -1;
+
+    background: #eee; 
+    
+
+    @media (min-width: $SizeTablets) {
+        top: $headerHeight + 30px;        
+    }                
+
+    @media (min-width: $SizeDesktop) {
+        top: $headerHeight + 30px;        
+    }                
+}
+

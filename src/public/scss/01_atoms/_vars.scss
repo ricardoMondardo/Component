@@ -1,16 +1,18 @@
 //Sizes for media queries
-$DesktopSize: 940px;
-$TabletsSize: 600px;
+$SizeDesktop: 940px;
+$SizeTablets: 600px;
 
-$SizeContent: 310px;
-$SizeContentTablet: 610px;
-$SizeContentDesktop: 1560px;
+$gapSidesPreview: 0px;
+$gapSidesPreviewTablet: 0px;
+$gapSidesPreviewDesktop: 0px;
 
-$gapPreview: 16px;
-$gapPreviewTablet: 30px;
-$gapPreviewDesktop: 60px;
+$headerHeight: 40px;
+$headerHeightTablet: 50px;
+$headerHeightDesktop: 50px;
 
-$headerFooterSize: 40px;
-$headerFooterSizeDesktop: 50px;
+$FooterHeight: 40px;
+$FooterHeightTablet: 50px;
+$FooterHeightDesktop: 50px;
 
 $fontMaster:  "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+$primeryColor: #1ABC9C;
