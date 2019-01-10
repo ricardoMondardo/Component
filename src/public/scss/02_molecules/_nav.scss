@@ -1,7 +1,5 @@
 .c-nav {
         
-    position: relative;
-    height: $headerHeight;
 
     &__menu-hamburger-icon {
         padding: 0px 10px;
@@ -15,7 +13,6 @@
         right: 55px;
         width: 160px;
         
-        color: #999;
         font-family: $fontMaster;
         text-align: center;
         border-radius: 4px;
@@ -26,7 +23,7 @@
 
         &:after {
             position: relative;
-            top: -212px;
+            top: -209px;
             left: 16px;
             content: "";
             display: block;
@@ -38,7 +35,7 @@
 
         ul {      
             
-            margin: 0;
+            margin: 0;            
 
             li {
 
@@ -51,7 +48,7 @@
                     padding: 5px 0px;
                     border-bottom: .8px solid $primeryColor;
 
-                    color: #888;
+                    color: black;                    
                     text-decoration: none;
                     transition: all .2s;
                 }
@@ -90,32 +87,33 @@
                 opacity: 0;
             }
                 
-            li {
+            ul {
 
-                list-style: none;
-                display: inline-block;                
-                line-height: 25px;
-                vertical-align: middle;
+                margin: 0;
 
-                a {
-                    font-size: 16px;
-                    padding: 5px 15px;
-                    color: white;
-                    text-decoration: none;
-                    transition: all .2s;                                    
-                }
+                li {
 
-                a:hover,
-                a:focus {
-                    background: #1ABC9C;
-                    color: #fff;
-                    font-weight: 600;   
-                    letter-spacing: 1.5px;       
-                    font-size: 18px;      
-                }                
-            }
-
+                    list-style: none;
+                    display: inline-block;                
+                    line-height: 25px;
+                    vertical-align: middle;
     
+                    a {
+                        font-size: 16px;
+                        padding: 3px 5px;
+                        text-decoration: none;
+                        transition: all .2s;    
+                        color: black;                                
+                    }
+    
+                    a:hover,
+                    a:focus {
+                        font-weight: 600;   
+                        letter-spacing: 1.5px;       
+                        font-size: 18px;      
+                    }                
+                }
+            }    
         
         }
     
