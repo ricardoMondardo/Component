@@ -382,13 +382,13 @@
       border-right: 19px solid transparent;
       border-bottom: 8px solid white; }
     .c-nav__menu ul {
-      margin: 5px 0px 0px 0px; }
+      margin: 0; }
       .c-nav__menu ul li {
         list-style: none;
         padding: 5px 0px; }
         .c-nav__menu ul li a {
           display: block;
-          margin: 0px 25px;
+          margin: 0px 10px;
           padding: 5px 0px;
           border-bottom: 0.8px solid #1ABC9C;
           color: #888;
@@ -398,7 +398,8 @@
     opacity: 1; }
   @media (min-width: 600px) {
     .c-nav__menu-hamburger-icon {
-      opacity: 0; }
+      opacity: 0;
+      width: 0; }
     .c-nav__menu {
       position: relative;
       float: right;
@@ -409,6 +410,9 @@
       background: unset;
       box-shadow: unset; }
       .c-nav__menu:after {
+        position: fixed;
+        top: 0;
+        left: 0;
         opacity: 0; }
       .c-nav__menu li {
         list-style: none;
@@ -448,17 +452,17 @@
 
 .content-wrapper {
   position: fixed;
-  height: 100%;
+  height: 86%;
   width: 100%;
   top: 60px;
   z-index: -1;
   background: #eee; }
   @media (min-width: 600px) {
     .content-wrapper {
-      top: 70px; } }
+      top: 60px; } }
   @media (min-width: 940px) {
     .content-wrapper {
-      top: 70px; } }
+      top: 60px; } }
 
 .c-card-grid-flex {
   display: flex;
@@ -510,16 +514,11 @@
   width: 100%;
   background: #1ABC9C; }
   .c-header__logo {
-    padding: 0px 15px;
+    margin-left: 10px;
     float: left; }
   .c-header__nav {
     float: right;
-    width: 60%; }
-  @media (min-width: 940px) {
-    .c-header {
-      height: 50px; }
-      .c-header__logo {
-        padding-top: 8px; } }
+    margin-right: 10px; }
 
 body {
   position: absolute;

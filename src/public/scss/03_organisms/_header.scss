@@ -9,22 +9,13 @@
     background: $primeryColor;
     
     &__logo {
-        padding: 0px 15px;
+        margin-left: 10px;
         float: left;
     }
 
     &__nav {
         float: right;
-        width: 60%;
-    }
-
-    @media (min-width: $SizeDesktop) {
-
-        height: $headerHeightDesktop;    
-
-        &__logo {
-            padding-top: 8px;
-        }        
+        margin-right: 10px;
     }
 
 }
