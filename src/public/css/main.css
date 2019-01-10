@@ -514,7 +514,7 @@
     float: left; }
   .c-header__nav {
     float: right;
-    width: 50%; }
+    width: 60%; }
   @media (min-width: 940px) {
     .c-header {
       height: 50px; }
